@@ -25,7 +25,6 @@ textLabel.BackgroundColor3 = Color3.new(0, 0, 0)
 textLabel.BackgroundTransparency = 0.3
 textLabel.BorderSizePixel = 0
 
--- Aguarda 3 segundos e remove o Pop-up
 wait(1)
 screenGui:Destroy()
 
