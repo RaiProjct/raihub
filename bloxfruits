@@ -50,8 +50,6 @@ local function tweenToLocations()
         local tween = TweenService:Create(humanoidRootPart, tweenInfo, goal)
         tween:Play()
         tween.Completed:Wait()
-
-        wait(1)
     end
 
     wait(1)
