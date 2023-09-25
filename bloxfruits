@@ -5,6 +5,30 @@ local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
+-- Criação do Pop-up
+local screenGui = Instance.new("ScreenGui")
+local textLabel = Instance.new("TextLabel")
+
+-- Configurando o ScreenGui
+screenGui.Parent = player.PlayerGui
+screenGui.Name = "AutoChestPopup"
+
+-- Configurando o TextLabel
+textLabel.Parent = screenGui
+textLabel.Size = UDim2.new(0.3, 0, 0.1, 0)
+textLabel.Position = UDim2.new(0.35, 0, 0.45, 0)
+textLabel.Text = "AutoChest | Rai"
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+textLabel.BackgroundTransparency = 0.3
+textLabel.BorderSizePixel = 0
+
+-- Aguarda 3 segundos e remove o Pop-up
+wait(3)
+screenGui:Destroy()
+
 local cframes = {
     CFrame.new(-5369.15869, 312.698517, -3034.57349, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396),
     CFrame.new(-5075.64355, 370.065948, -3174.44238, 0.374604106, -0, -0.92718488, 0, 1, -0, 0.92718488, 0, 0.374604106),
