@@ -26,7 +26,7 @@ textLabel.BackgroundTransparency = 0.3
 textLabel.BorderSizePixel = 0
 
 -- Aguarda 3 segundos e remove o Pop-up
-wait(3)
+wait(1)
 screenGui:Destroy()
 
 local cframes = {
