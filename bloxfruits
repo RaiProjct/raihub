@@ -20,9 +20,6 @@ g.BackgroundColor3 = Color3.new(0, 0, 0)
 g.BackgroundTransparency = 0.3
 g.BorderSizePixel = 0
 
-wait(1)
-f:Destroy()
-
 local m_pp = {
     ["°"] = string.gsub("π", "π", "0"),
     ["i"] = string.gsub("¥", "¥", "1"),
