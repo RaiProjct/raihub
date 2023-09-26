@@ -1,68 +1,57 @@
-local a = game:GetService("TweenService")
-local b = game:GetService("TeleportService")
-local c = game.Players.LocalPlayer
-local d = c.Character or c.CharacterAdded:Wait()
-local e = d:WaitForChild("HumanoidRootPart")
+local TweenService = game:GetService("TweenService")
+local TeleportService = game:GetService("TeleportService")
 
-local f = Instance.new("ScreenGui")
-local g = Instance.new("TextLabel")
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
-f.Parent = c.PlayerGui
-f.Name = "P1"
-g.Parent = f
-g.Size = UDim2.new(0.3, 0, 0.1, 0)
-g.Position = UDim2.new(0.35, 0, 0.45, 0)
-g.Text = "&u+°§h*s+/|/R°i":gsub("&", "A"):gsub("/", " "):gsub("§", "C"):gsub("*", "e"):gsub("+", "t")
-g.TextScaled = true
-g.Font = Enum.Font.SourceSansBold
-g.TextColor3 = Color3.new(1, 1, 1)
-g.BackgroundColor3 = Color3.new(0, 0, 0)
-g.BackgroundTransparency = 0.3
-g.BorderSizePixel = 0
+local screenGui = Instance.new("ScreenGui")
+local textLabel = Instance.new("TextLabel")
 
-local m_pp = {
-    ["°"] = string.gsub("π", "π", "0"),
-    ["i"] = string.gsub("¥", "¥", "1"),
-    ["h"] = string.gsub("€", "€", "2"),
-    ["g"] = string.gsub("¢", "¢", "3"),
-    ["f"] = string.gsub("£", "£", "4"),
-    ["e"] = string.gsub("^", "^", "5"),
-    ["d"] = string.gsub("$", "$", "6"),
-    ["c"] = string.gsub("∆", "∆", "7"),
-    ["b"] = string.gsub("✓", "✓", "8"),
-    ["a"] = string.gsub("~", "~", "9")
+screenGui.Parent = player.PlayerGui
+screenGui.Name = "AutoChestPopup"
+
+textLabel.Parent = screenGui
+textLabel.Size = UDim2.new(0.3, 0, 0.1, 0)
+textLabel.Position = UDim2.new(0.35, 0, 0.45, 0)
+textLabel.Text = "AutoChest | Rai"
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+textLabel.BackgroundTransparency = 0.3
+textLabel.BorderSizePixel = 0
+
+wait(1)
+screenGui:Destroy()
+
+local cframes = {
+    CFrame.new(-5234.42725, 1087.47791, -2578.08716, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396),
+    CFrame.new(-5369.15869, 312.698517, -3034.57349, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396),
+    CFrame.new(-5075.64355, 370.065948, -3174.44238, 0.374604106, -0, -0.92718488, 0, 1, -0, 0.92718488, 0, 0.374604106),
+    CFrame.new(-4919.99268, 370.065979, -2845.20337, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396),
+    CFrame.new(-4953.46191, 313.268555, -3173.19336, -0.927179813, 0, -0.374617696, 0, 1, 0, 0.374617696, 0, -0.927179813),
+    CFrame.new(-5335.69971, 312.468536, -2840.2959, 0.374604106, -0, -0.92718488, 0, 1, -0, 0.92718488, 0, 0.374604106),
+    CFrame.new(-5600.31006, 312.468536, -2719.47363, -0.374604106, 0, 0.92718488, 0, 1, 0, -0.92718488, 0, -0.374604106),
+    CFrame.new(-5719.32861, 312.698517, -2892.8313, 0.927179396, 0, 0.374617696, 0, 1, 0, -0.374617696, 0, 0.927179396)
 }
 
-local function d_cf(str)
-    for key, value in pairs(m_pp) do
-        str = string.gsub(str, key, value)
-    end
-    return str
-end
+local function tweenToLocations()
+    local tweenInfo = TweenInfo.new(2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 
-local h = {
-    CFrame.new(d_cf("-eief.bdedc"), d_cf("iehg.bdedbi"), d_cf("-bcde.ebcei")),
-    CFrame.new(d_cf("-edih.i9e6i"), d_cf("ceh.bdedc"), d_cf("-ei9i.7i7db")),
-    CFrame.new(d_cf("-ehd9.9de7i"), d_cf("e7h.bdedc"), d_cf("-db9f.9ih9d")),
-    CFrame.new(d_cf("-dh6h.6di9h"), d_cf("c6e.bded6"), d_cf("-ef5f.6ge8h")),
-    CFrame.new(d_cf("-fb9f.5g9f5"), d_cf("d5d.b9ed5"), d_cf("-ge4e.4fc7e")),
-    CFrame.new(d_cf("-f9ie.4ie5i"), d_cf("c4h.b9ed4"), d_cf("-hd3d.3eb6d")),
-    CFrame.new(d_cf("-g8hg.3hg4h"), d_cf("b3g.b8ed3"), d_cf("-ic2c.2da5c")),
-    CFrame.new(d_cf("-h7gf.2gf3g"), d_cf("a2f.b7ed2"), d_cf("-jb1b.1c9b4")),
-}
+    for _, cframe in ipairs(cframes) do
+        local goal = {}
+        goal.CFrame = cframe
 
-local function i()
-    local j = TweenInfo.new(2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
-    for _, k in ipairs(h) do
-        local l = {}
-        l.CFrame = k
-        local m = a:Create(e, j, l)
-        m:Play()
-        m.Completed:Wait()
+        print("Movendo para a próxima localização...")
+        local tween = TweenService:Create(humanoidRootPart, tweenInfo, goal)
+        tween:Play()
+        tween.Completed:Wait()
     end
+
     wait(1)
-    local n = 2753915549
-    b:Teleport(n)
+    local targetPlaceId = 2753915549
+    TeleportService:Teleport(targetPlaceId)
 end
 
-i()
+tweenToLocations()
