@@ -6,7 +6,7 @@ local currentPlaceID = game.PlaceId
 
 if currentPlaceID == 7449423635 or currentPlaceID == 7001598755 or currentPlaceID == 2753915549 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RaiProjct/rai/main/bloxfruits", true))()
-currentPlaceID
+end
 
 -- ===================================
 --             EM BREVE
