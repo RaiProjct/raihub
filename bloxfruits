@@ -9,7 +9,7 @@ local screenGui = Instance.new("ScreenGui")
 local textLabel = Instance.new("TextLabel")
 
 screenGui.Parent = player.PlayerGui
-screenGui.Name = "AutoChestPopup"
+screenGui.Name = "PopUp"
 
 textLabel.Parent = screenGui
 textLabel.Size = UDim2.new(0.3, 0, 0.1, 0)
