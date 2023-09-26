@@ -2,7 +2,7 @@
 --            BLOX FRUITS
 -- ===================================
 
-if game.PlaceId == 7449423635 then
+if id == 7449423635 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RaiProjct/rai/main/bloxfruits"))()
 end
 
