@@ -1,13 +1,5 @@
 local id = game.PlaceId
 
 -- ===================================
---            BLOX FRUITS
--- ===================================
-
-if id == 7449423635 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RaiProjct/rai/main/bloxfruits"))()
-end
-
--- ===================================
 --             EM BREVE
 -- ===================================
