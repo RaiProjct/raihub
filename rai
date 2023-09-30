@@ -1,4 +1,4 @@
-local id = game.PlaceId
+local GameId = game.PlaceId
 
 -- ===================================
 --             EM BREVE
