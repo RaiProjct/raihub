@@ -10,7 +10,5 @@ else
 -- ===================================
 --             Universal
 -- ===================================
-
-
-
+loadstring(http.Get("https://raw.githubusercontent.com/RaiProjct/rai/main/games/Universal"))()
 end
