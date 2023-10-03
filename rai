@@ -5,9 +5,13 @@ local GameSp = {
 }
 
 -- ===================================
+--             Universal
+-- ===================================
+
+(aqui coloca que se não tiver o id do jogo ele ira executar o universal)
+
+-- ===================================
 --             Blade Ball
 -- ===================================
 
-if GameId == 13772394625 then
-    loadstring(http.Get("https://raw.githubusercontent.com/RaiProjct/rai/main/games/BladeBall"))()
-end
+(e aqui se tiver o id 13772394625 coloca pra executar: loadstring(http.Get("https://raw.githubusercontent.com/RaiProjct/rai/main/games/BladeBall"))())
