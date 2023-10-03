@@ -1,4 +1,5 @@
 local GameId = game.PlaceId
+local GameSp
 
 -- ===================================
 --             Blade Ball
