@@ -1,9 +1,14 @@
 local GameId = game.PlaceId
 
+if GameId == 13772394625 then
 -- ===================================
 --             Blade Ball
 -- ===================================
+loadstring(http.Get("https://raw.githubusercontent.com/RaiProjct/rai/main/games/BladeBall"))()
 
-  if GameId == 13772394625 then
-    loadstring(http.Get("https://raw.githubusercontent.com/RaiProjct/rai/main/games/BladeBall"))()
-   end
+else
+-- ===================================
+--             Universal
+-- ===================================
+
+end
