@@ -457,7 +457,7 @@ function RaiLib:Init()
 				LoadCfg(readfile(RaiLib.Folder .. "/" .. game.GameId .. ".txt"))
 				RaiLib:MakeNotification({
 					Name = "Configuration",
-					Content = "Auto-loaded configuration for the game " .. game.GameId .. ".",
+					Content = "Auto-loaded configuration.",
 					Time = 5
 				})
 			end
