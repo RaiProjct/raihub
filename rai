@@ -1,5 +1,8 @@
 local GameId = game.PlaceId
-local GameSp
+local GameSp = {
+  "nil",
+  "13772394625"
+}
 
 -- ===================================
 --             Blade Ball
