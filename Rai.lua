@@ -10,11 +10,11 @@ Jajdnsojwkqmwbwkskslanaoak["Trial"] = true
 
 function CheckGame()
 local gameid == game.PlaceID
-  if gameid == 6442957604 then
-    pctycoon()
-  else
-    
-  end
+if gameid == 6442957604 then
+pctycoon()
+else
+  
+end
 end
 
 function CheckKey()
