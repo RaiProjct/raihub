@@ -3,13 +3,6 @@ local Window = RaiLib:MakeWindow({
   Name = "Privileged  |  Key System", HidePremium = false, IntroText = "Privileged | Carregando...", SaveConfig = true, ConfigFolder = "COSMIC-FILE-KEY"
 })
 
-RaiLib:MakeNotification({
-  Name = "Discord:",
-  Content = "discord.gg/invite",
-  Image = "rbxassetid://13132648697",
-  Time = 5
-})
-
 _G.Jajdnsojwkqmwbwkskslanaoak = {}
 _G.oqbwjwlwkkqjqjsjs = "string"
 
