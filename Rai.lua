@@ -45,7 +45,7 @@ MainTab:AddTextbox({
   Default = "",
   TextDisappear = true,
   Callback = function(Value)
-  _G.KeyInput = Value
+  _G.oqbwjwlwkkqjqjsjs = Value
   end
 })
 
