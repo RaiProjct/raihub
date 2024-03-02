@@ -1,1 +1,1 @@
-
+local RaiLib = loadstring(game:HttpGet(('lib')))()
