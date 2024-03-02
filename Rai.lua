@@ -37,7 +37,7 @@ RaiLib:MakeNotification({
 end
 
 local MainTab = Window:MakeTab({
-  Name = "Main",
+  Name = "Key System",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
