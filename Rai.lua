@@ -17,7 +17,7 @@ function CheckKey()
 RaiLib:Destroy()
 RaiLib:MakeNotification({
   Name = "Sucesso!",
-  Content = "Você ejetou o script.",
+  Content = "Você injetou o script.",
   Image = "rbxassetid://13132648697",
   Time = 10
 })
@@ -28,7 +28,7 @@ end
 function incorreto()
 RaiLib:MakeNotification({
   Name = "Key Incorreta",
-  Content = "Você usou a key errada.",
+  Content = "Sua Key está inválida.",
   Image = "rbxassetid://13132648697",
   Time = 10
 })
