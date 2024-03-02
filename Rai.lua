@@ -10,8 +10,8 @@ RaiLib:MakeNotification({
   Time = 5
 })
 
-_G.Key = "LsXk77CosmicHub"
-_G.KeyInput = "string"
+_G.Jajdnsojwkqmwbwkskslanaoak = {}
+_G.oqbwjwlwkkqjqjsjs = "string"
 
 function CheckKey()
 RaiLib:Destroy()
