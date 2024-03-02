@@ -9,7 +9,8 @@ _G.oqbwjwlwkkqjqjsjs = "string"
 Jajdnsojwkqmwbwkskslanaoak["Trial"] = true
 
 function CheckGame()
-  local gameid == game.PlaceID
+local gameid == game.PlaceID
+if gameid == 
 end
 
 function CheckKey()
