@@ -26,7 +26,6 @@ RaiLib:MakeNotification({
 wait(3)
 
 end
-
 function incorreto()
 RaiLib:MakeNotification({
   Name = "Key Inválida",
@@ -35,13 +34,11 @@ RaiLib:MakeNotification({
   Time = 10
 })
 end
-
 local MainTab = Window:MakeTab({
   Name = "Key System",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-
 MainTab:AddTextbox({
   Name = "Enter Key",
   Default = "",
@@ -50,7 +47,6 @@ MainTab:AddTextbox({
   _G.oqbwjwlwkkqjqjsjs = Value
   end
 })
-
 MainTab:AddButton({
   Name = "Login",
   Callback = function()
@@ -61,5 +57,4 @@ MainTab:AddButton({
   end
   end
 })
-
 RaiLib:Init()
