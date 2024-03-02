@@ -13,6 +13,8 @@ RaiLib:MakeNotification({
 _G.Jajdnsojwkqmwbwkskslanaoak = {}
 _G.oqbwjwlwkkqjqjsjs = "string"
 
+Jajdnsojwkqmwbwkskslanaoak["Trial"] = true
+
 function CheckKey()
 RaiLib:Destroy()
 RaiLib:MakeNotification({
