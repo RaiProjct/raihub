@@ -13,7 +13,7 @@ local gameid == game.PlaceID
 if gameid == 6442957604 then
 pctycoon()
 else
-return;
+  return;
 end
 end
 
@@ -28,6 +28,9 @@ RaiLib:MakeNotification({
 wait(3)
 CheckGame()
 end
+
+
+
 function incorreto()
 RaiLib:MakeNotification({
   Name = "Key Inválida",
@@ -36,11 +39,17 @@ RaiLib:MakeNotification({
   Time = 10
 })
 end
+
+
+
 local KeySystem = Window:MakeTab({
   Name = "Key System",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
+
+
+
 KeySystem:AddTextbox({
   Name = "Enter Key",
   Default = "",
@@ -49,6 +58,9 @@ KeySystem:AddTextbox({
   _G.oqbwjwlwkkqjqjsjs = Value
   end
 })
+
+
+
 KeySystem:AddButton({
   Name = "Login",
   Callback = function()
@@ -59,4 +71,7 @@ KeySystem:AddButton({
   end
   end
 })
+
+
+
 RaiLib:Init()
