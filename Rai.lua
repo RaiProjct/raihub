@@ -24,7 +24,6 @@ RaiLib:MakeNotification({
   Time = 10
 })
 wait(3)
-
 end
 function incorreto()
 RaiLib:MakeNotification({
