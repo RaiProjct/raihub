@@ -17,6 +17,7 @@ RaiLib:MakeNotification({
   Time = 10
 })
 wait(3)
+CheckGame()
 end
 function incorreto()
 RaiLib:MakeNotification({
@@ -50,4 +51,3 @@ KeySystem:AddButton({
   end
 })
 RaiLib:Init()
-
