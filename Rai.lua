@@ -34,12 +34,12 @@ RaiLib:MakeNotification({
   Time = 10
 })
 end
-local MainTab = Window:MakeTab({
+local KeySystem = Window:MakeTab({
   Name = "Key System",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-MainTab:AddTextbox({
+KeySystem:AddTextbox({
   Name = "Enter Key",
   Default = "",
   TextDisappear = true,
@@ -47,7 +47,7 @@ MainTab:AddTextbox({
   _G.oqbwjwlwkkqjqjsjs = Value
   end
 })
-MainTab:AddButton({
+KeySystem:AddButton({
   Name = "Login",
   Callback = function()
   if _G.Jajdnsojwkqmwbwkskslanaoak[_G.oqbwjwlwkkqjqjsjs] then
