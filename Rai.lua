@@ -1,6 +1,6 @@
 local RaiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib')))()
 local Window = RaiLib:MakeWindow({
-  Name = "Privileged  |  Key System", HidePremium = false, IntroText = "Privileged | Carregando...", SaveConfig = true, ConfigFolder = "COSMIC-FILE-KEY"
+  Name = "Privileged  |  Key System", HidePremium = false, IntroText = "Privileged | Carregando...", SaveConfig = true, ConfigFolder = "key-pg"
 })
 
 _G.Jajdnsojwkqmwbwkskslanaoak = {}
@@ -73,5 +73,13 @@ KeySystem:AddButton({
 })
 
 
+function pctycoon()
+
+local pctycoon = RaiLib:MakeWindow({
+  Name = "Privileged  | pctycoon", HidePremium = false, IntroText = "Privileged | Carregando...", SaveConfig = true, ConfigFolder = "pctycoon-pg"
+})
+
+
+end
 
 RaiLib:Init()
