@@ -52,7 +52,7 @@ MainTab:AddTextbox({
 MainTab:AddButton({
   Name = "Login",
   Callback = function()
-  if _G.Key[_G.oqbwjwlwkkqjqjsjs] then
+  if _G.Jajdnsojwkqmwbwkskslanaoak[_G.oqbwjwlwkkqjqjsjs] then
   CheckKey()
   else
     incorreto()
