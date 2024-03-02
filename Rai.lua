@@ -29,7 +29,7 @@ end
 
 function incorreto()
 RaiLib:MakeNotification({
-  Name = "Key Incorreta",
+  Name = "Key Inválida",
   Content = "Sua Key está inválida.",
   Image = "rbxassetid://13132648697",
   Time = 10
