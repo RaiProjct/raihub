@@ -13,7 +13,7 @@ local gameid == game.PlaceID
 if gameid == 6442957604 then
 pctycoon()
 else
-  
+return;
 end
 end
 
