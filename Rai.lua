@@ -1,1 +1,1 @@
-local RaiLib = loadstring(game:HttpGet(('lib')))()
+local RaiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib')))()
