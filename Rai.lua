@@ -8,6 +8,10 @@ _G.oqbwjwlwkkqjqjsjs = "string"
 
 Jajdnsojwkqmwbwkskslanaoak["Trial"] = true
 
+function CheckGame()
+  local gameid == game.PlaceID
+end
+
 function CheckKey()
 RaiLib:Destroy()
 RaiLib:MakeNotification({
