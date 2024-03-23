@@ -85,12 +85,6 @@ local function dragonballrage()
         PremiumOnly = false
     }
 
-    local dbrEspTab = dbrWindow:MakeTab{
-        Name = "Esp",
-        Icon = "rbxassetid://4483345998",
-        PremiumOnly = false
-    }
-
     dbrFarmTab:AddToggle{
         Name = "Auto Train",
         Default = false,
@@ -105,6 +99,12 @@ local function dragonballrage()
             -- Autotrain logic
         end
     end
+
+    local dbrEspTab = dbrWindow:MakeTab{
+        Name = "Esp",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    }
 end
 
 RaiLib:Init()
