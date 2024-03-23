@@ -99,7 +99,7 @@ local MainEspTab = MainWindow:MakeTab{
     PremiumOnly = false
 }
 
-MainEspTab:AddButton({
+MainFarmTab:AddButton({
 	Name = "Auto Train",
 	Callback = function()
 	  if _G.autotrain == false then
@@ -119,18 +119,6 @@ MainEspTab:AddButton({
   	end
   	end
 })
-
-MainFarmTab:AddToggle{
-    Name = "Auto Train",
-    Default = false,
-    Callback = function(Value)
-        _G.autotrain = Value
-        autotrain1()
-        autotrain2()
-        autotrain3()
-        autotrain4()
-    end
-}
 
 local function autotrain1()
     while _G.autotrain do
