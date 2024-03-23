@@ -140,7 +140,7 @@ local function autotrain4()
     end
 end
 
-Tab:AddButton({
+MainEspTab:AddButton({
 	Name = "Esp Player",
 	Callback = function()
 	  if _G.espcheck == false then
@@ -154,15 +154,6 @@ Tab:AddButton({
   	end
   	end
 })
-
-MainEspTab:AddToggle{
-    Name = "Esp Player",
-    Default = false,
-    Callback = function(Value)
-        _G.espcheck = Value
-        espcheck()
-    end
-}
 
 local function espcheck()
   if _G.espcheck == true then
