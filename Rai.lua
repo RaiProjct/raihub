@@ -42,7 +42,6 @@ local function DisplayInvalidKeyNotification()
     }
 end
 
--- [ Configuração da Janela de Key System ] --
 local KeySystemTab = MainWindow:MakeTab{
     Name = "Key System",
     Icon = "rbxassetid://4483345998",
