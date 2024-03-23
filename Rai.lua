@@ -80,7 +80,7 @@ local dbrWindow = RaiLib:MakeWindow({
   ConfigFolder = "dbr-pg"
 })
 
-local dbrAutoTab = MainWindow:MakeTab({
+local dbrFarmTab = MainWindow:MakeTab({
   Name = "Farm",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
