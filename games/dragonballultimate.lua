@@ -78,6 +78,7 @@ function checkprotocol()
     game.Players.LocalPlayer:Kick("Você precisa passar pelo sistema de Key primeiro")
 end
 end
+checkprotocol()
 
 local dbuWindow = RaiLib:MakeWindow{
     Name = "Privileged  | Dragon Blox Ultimate",
