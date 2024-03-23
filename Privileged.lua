@@ -78,6 +78,12 @@ local GameTab = MainWindow:MakeTab{
     PremiumOnly = false
 }
 
+GameTab:AddButton{
+    Name = "Dragon Blox Ultimate",
+    Callback = function()
+      
+    end
+}
 end
 
 RaiLib:Init()
