@@ -10,11 +10,10 @@ local MainWindow = RaiLib:MakeWindow{
 _G.protocolprocesskeyrailibcheckscriptkey = false
 _G.KeyData = "trial"
 _G.KeyType = "string"
-_G.gameId = tonumber(game.PlaceID)
 
 -- [ Funções de Verificação ] --
 function process()
-    _G.gameId = tonumber(game.PlaceID)
+    _G.gameidprishsjsjsks = tonumber(game.PlaceID)
     print(gameId)
     RaiLib:MakeNotification{
         Name = "Sucesso!",
@@ -23,7 +22,7 @@ function process()
         Time = 10
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
-    if gameId == 3311165597 then
+    if gameidprishsjsjsks == 3311165597 then
       RaiLib:Destroy()
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
     else
