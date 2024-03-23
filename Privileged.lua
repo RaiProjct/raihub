@@ -19,11 +19,11 @@ function process()
         Image = "rbxassetid://13132648697",
         Time = 10
     }
-    RaiLib:Destroy()
     local gameId = game.PlaceID
     _G.protocolprocesskeyrailibcheckscriptkey = true
     if gameId == 3311165597 then
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
+      RaiLib:Destroy()
     else
         return
     end
