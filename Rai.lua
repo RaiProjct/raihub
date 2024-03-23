@@ -14,7 +14,7 @@ KeyData["Trial"] = true
 -- [ Funções de Verificação ] --
 local function CheckGame()
     local gameId = game.PlaceID
-    if gameId == 71315343 then
+    if gameId == 3311165597 then
         dragonbloxultimate()
     else
         return
