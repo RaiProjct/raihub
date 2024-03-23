@@ -74,7 +74,7 @@ local MainWindow = RaiLib:MakeWindow{
 
 local KeySystemTab = MainWindow:MakeTab{
     Name = "Games",
-    Icon = "rbxassetid://16845695850",
+    Icon = "rbxassetid://16845953528",
     PremiumOnly = false
 }
 
