@@ -81,7 +81,7 @@ local GameTab = MainWindow:MakeTab{
 GameTab:AddButton{
     Name = "Dragon Blox Ultimate",
     Callback = function()
-      
+      RaiLib:Destroy()
     end
 }
 end
