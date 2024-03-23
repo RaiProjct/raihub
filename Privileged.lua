@@ -13,13 +13,13 @@ _G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
 function process()
+    local gameId = game.PlaceID
     RaiLib:MakeNotification{
-        Name = "Sucesso!",
+        Name = "Sucesso!" + gameId,
         Content = "Você injetou o script.",
         Image = "rbxassetid://13132648697",
         Time = 10
     }
-    local gameId = game.PlaceID
     _G.protocolprocesskeyrailibcheckscriptkey = true
     if gameId == 3311165597 then
       RaiLib:Destroy()
