@@ -15,7 +15,7 @@ KeyData["Trial"] = true
 local function CheckGame()
     local gameId = game.PlaceID
     if gameId == 71315343 then
-        dragonballrage()
+        dragonbloxultimate()
     else
         return
     end
