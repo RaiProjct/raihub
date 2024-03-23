@@ -8,7 +8,7 @@ local MainWindow = RaiLib:MakeWindow{
 }
 
 _G.protocolprocesskeyrailibcheckscriptkey = false
-_G.KeyData = Trial
+_G.KeyData = "trial"
 _G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
