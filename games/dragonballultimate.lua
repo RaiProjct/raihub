@@ -140,6 +140,15 @@ local dbuEspTab = dbuWindow:MakeTab{
     PremiumOnly = false
 }
 
+dbuEspTab:AddToggle{
+    Name = "Esp Player",
+    Default = false,
+    Callback = function(Value)
+        _G.espcheck = Value
+        espcheck()
+    end
+}
+
 local function espcheck()
   if _G.espcheck == true then
     espLib:Load()
