@@ -19,7 +19,10 @@ dbuFarmTab:AddToggle{
     Default = false,
     Callback = function(Value)
         _G.autotrain = Value
-        autotrain()
+        autotrain1()
+        autotrain2()
+        autotrain3()
+        autotrain4()
     end
 }
 
