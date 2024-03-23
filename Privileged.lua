@@ -22,12 +22,7 @@ function process()
         Time = 10
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
-    if gameidprishsjsjsks == 3311165597 then
-      RaiLib:Destroy()
-      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
-    else
-        return
-    end
+    nextpage()
 end
 
 local function DisplayInvalidKeyNotification()
