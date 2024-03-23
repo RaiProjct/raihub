@@ -22,7 +22,7 @@ function process()
         Time = 10
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
-    RaiLib:Destroy
+    RaiLib:Destroy()
     nextpage()
 end
 
