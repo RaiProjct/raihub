@@ -60,17 +60,11 @@ MainFarmTab:AddButton({
 	  if _G.autotrain == false then
 	    _G.autotrain = true
 	    wait(.1)
-	    autotrain1()
-      autotrain2()
-      autotrain3()
-      autotrain4()
+	    autotrain()
 	  else
 	    _G.autotrain = false
 	    wait(.1)
-      autotrain1()
-      autotrain2()
-      autotrain3()
-      autotrain4()
+      autotrain()
   	end
   	end
 })
