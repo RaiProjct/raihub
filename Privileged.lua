@@ -83,6 +83,8 @@ GameTab:AddButton{
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
     end
 }
+
+RaiLib:Init()
 end
 
 RaiLib:Init()
