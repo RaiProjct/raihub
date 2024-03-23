@@ -3,7 +3,7 @@ local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiPro
 function checkprotocol()
   if _G.protocolprocesskeyrailibcheckscriptkey == false then
     RaiLib:Destroy()
-    
+    game.Players.LocalPlayer:Kick("Você precisa passar pelo sistema de Key primeiro")
 end
 
 local dbuWindow = RaiLib:MakeWindow{
