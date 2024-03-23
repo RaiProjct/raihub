@@ -16,6 +16,7 @@ KeyData["Trial"] = true
 local function CheckGame()
     local gameId = game.PlaceID
     if gameId == 3311165597 then
+        _G.protocolprocesskeyrailibcheckscriptkey = true
         
     else
         return
