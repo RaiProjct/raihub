@@ -64,7 +64,7 @@ KeySystemTab:AddButton{
 
 function nextpage()
 
-local MainWindow = RaiLib:MakeWindow{
+local Main2Window = RaiLib:MakeWindow{
     Name = "Privileged  |  Select Game",
     HidePremium = false,
     IntroText = "Privileged | Carregando...",
@@ -72,7 +72,7 @@ local MainWindow = RaiLib:MakeWindow{
     ConfigFolder = "sg-pg"
 }
 
-local GameTab = MainWindow:MakeTab{
+local GameTab = Main2Window:MakeTab{
     Name = "Games",
     Icon = "rbxassetid://16845953528",
     PremiumOnly = false
