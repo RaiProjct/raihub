@@ -73,11 +73,11 @@ KeySystemTab:AddButton({
 -- [ Função do pctycoon ] --
 function dragonballrage()
 local dbrWindow = RaiLib:MakeWindow({
-  Name = "Privileged  | pctycoon",
+  Name = "Privileged  | Dragon Ball Rage",
   HidePremium = false,
   IntroText = "Privileged | Carregando...",
   SaveConfig = true,
-  ConfigFolder = "pctycoon-pg"
+  ConfigFolder = "dbr-pg"
 })
 end
 
