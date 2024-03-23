@@ -55,8 +55,6 @@ local function autotrain4()
     end
 end
 
-
-
 local dbuEspTab = dbuWindow:MakeTab{
     Name = "Esp",
     Icon = "rbxassetid://4483345998",
