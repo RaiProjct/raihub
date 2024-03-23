@@ -164,7 +164,7 @@ MainEspTab:AddButton({
   	end
 })
 
-local function espcheck()
+function espcheck()
   if _G.espcheck == true then
     espLib:Load()
   else
