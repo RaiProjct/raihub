@@ -64,7 +64,13 @@ KeySystemTab:AddButton{
 
 function nextpage()
 
-
+local MainWindow = RaiLib:MakeWindow{
+    Name = "Privileged  |  Select Game",
+    HidePremium = false,
+    IntroText = "Privileged | Carregando...",
+    SaveConfig = true,
+    ConfigFolder = "sg-pg"
+}
 
 end
 
