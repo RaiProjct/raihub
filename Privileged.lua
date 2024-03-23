@@ -12,7 +12,7 @@ _G.KeyData = "trial"
 _G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
-local function CheckGame()
+function process()
     RaiLib:MakeNotification{
         Name = "Sucesso!",
         Content = "Você injetou o script.",
@@ -25,18 +25,8 @@ local function CheckGame()
     if gameId == 3311165597 then
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
     else
-        
+        return
     end
-end
-
-local function CheckKey()
-    RaiLib:MakeNotification{
-        Name = "Sucesso!",
-        Content = "Você injetou o script.",
-        Image = "rbxassetid://13132648697",
-        Time = 10
-    }
-    CheckGame()
 end
 
 local function DisplayInvalidKeyNotification()
@@ -67,7 +57,7 @@ KeySystemTab:AddButton{
     Name = "Login",
     Callback = function()
         if _G.KeyType == _G.KeyData then
-            CheckKey()
+            process()
         else
             DisplayInvalidKeyNotification()
             _G.protocolprocesskeyrailibcheckscriptkey = false
