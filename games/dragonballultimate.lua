@@ -13,16 +13,19 @@ function espcheck()
 end
 function autotrain()
     while _G.autotrain do
-        wait(0.0001)
+        wait(.1)
         local args = {"Blacknwhite27"}
         game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-        wait(0.0001)
+        wait(.1)
         args = {1, false, CFrame.new(-477.7599182128906, 219.12937927246094, -3772.001953125) * CFrame.Angles(-3.141592502593994, -0.8255488276481628, -3.141592502593994)}
         game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-        wait(0.0001)
+        wait(.1)
         args = {"Blacknwhite27"}
         game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
-        wait(0.0001)
+        wait(.1)
+        args = {"Blacknwhite27"}
+        game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
+        wait(.1)
         args = {"Blacknwhite27", 1}
         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
     end
