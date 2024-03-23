@@ -13,8 +13,6 @@ _G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
 function process()
-    _G.gameidprishsjsjsks = game.PlaceId
-    print(gameidprishsjsjsks)
     RaiLib:MakeNotification{
         Name = "Sucesso!",
         Content = "Você injetou o script.",
