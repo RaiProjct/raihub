@@ -18,7 +18,7 @@ function process()
     RaiLib:MakeNotification{
         Name = "Sucesso!",
         Content = "Você injetou o script.",
-        Image = "rbxassetid://13132648697",
+        Image = "rbxassetid://16845695850",
         Time = 10
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
@@ -34,14 +34,14 @@ local function DisplayInvalidKeyNotification()
     RaiLib:MakeNotification{
         Name = "Key Inválida",
         Content = "Sua Key está inválida.",
-        Image = "rbxassetid://13132648697",
+        Image = "rbxassetid://16845695850",
         Time = 10
     }
 end
 
 local KeySystemTab = MainWindow:MakeTab{
     Name = "Key System",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://16845695850",
     PremiumOnly = false
 }
 
