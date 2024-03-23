@@ -15,7 +15,7 @@ _G.KeyType = "string"
 function process()
     local gameId = game.PlaceID
     RaiLib:MakeNotification{
-        Name = "Sucesso!" + gameId,
+        Name = "Sucesso!",
         Content = "Você injetou o script.",
         Image = "rbxassetid://13132648697",
         Time = 10
