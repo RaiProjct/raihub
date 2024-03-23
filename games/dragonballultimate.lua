@@ -110,9 +110,12 @@ MainEspTab:AddButton({
       autotrain3()
       autotrain4()
 	  else
-	    _G.espcheck = false
+	    _G.autotrain = false
 	    wait(.1)
-	    espcheck()
+      autotrain1()
+      autotrain2()
+      autotrain3()
+      autotrain4()
   	end
   	end
 })
