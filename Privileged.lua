@@ -80,7 +80,7 @@ GameTab:AddButton{
     Name = "Dragon Blox Ultimate",
     Callback = function()
       RaiLib:Destroy()
-      
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
     end
 }
 end
