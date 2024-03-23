@@ -10,7 +10,7 @@ local MainWindow = RaiLib:MakeWindow{
 _G.protocolprocesskeyrailibcheckscriptkey = false
 _G.KeyData = "trial"
 _G.KeyType = "string"
-_G.gameId = game.PlaceID
+_G.gameId = tonumber(game.PlaceID)
 
 -- [ Funções de Verificação ] --
 function process()
