@@ -1,5 +1,7 @@
 local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib'))()
 
+_G.autotrain = false
+
 function checkprotocol()
   if _G.protocolprocesskeyrailibcheckscriptkey == false then
     RaiLib:Destroy()
