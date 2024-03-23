@@ -52,3 +52,5 @@ local RaiLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RaiPr
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     }
+    
+RaiLib:Init()
