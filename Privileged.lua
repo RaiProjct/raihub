@@ -61,7 +61,7 @@ KeySystemTab:AddTextbox{
 KeySystemTab:AddButton{
     Name = "Login",
     Callback = function()
-        if KeyData == KeyType then
+        if KeyType == KeyData then
             CheckKey()
         else
             DisplayInvalidKeyNotification()
