@@ -70,22 +70,22 @@ KeySystemTab:AddButton{
 }
 
 -- [ Função dos games ] --
-local function dragonballrage()
-    local dbrWindow = RaiLib:MakeWindow{
-        Name = "Privileged  | Dragon Ball Rage",
+local function dragonbloxultimate()
+    local dbuWindow = RaiLib:MakeWindow{
+        Name = "Privileged  | Dragon Blox Ultimate",
         HidePremium = false,
         IntroText = "Privileged | Carregando...",
         SaveConfig = true,
-        ConfigFolder = "dbr-pg"
+        ConfigFolder = "dbu-pg"
     }
 
-    local dbrFarmTab = dbrWindow:MakeTab{
+    local dbuFarmTab = dbuWindow:MakeTab{
         Name = "Farm",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     }
 
-    dbrFarmTab:AddToggle{
+    dbuFarmTab:AddToggle{
         Name = "Auto Train",
         Default = false,
         Callback = function(Value)
@@ -119,7 +119,7 @@ local function dragonballrage()
         end
     end
 
-    local dbrEspTab = dbrWindow:MakeTab{
+    local dbuEspTab = dbuWindow:MakeTab{
         Name = "Esp",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
