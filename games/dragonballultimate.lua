@@ -68,4 +68,5 @@ local dbuEspTab = dbuWindow:MakeTab{
     PremiumOnly = false
 }
 
+checkprotocol()
 RaiLib:Init()
