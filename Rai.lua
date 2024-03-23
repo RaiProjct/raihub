@@ -7,6 +7,7 @@ local MainWindow = RaiLib:MakeWindow{
     ConfigFolder = "key-pg"
 }
 
+_G.protocolprocesskeyrailibcheckscriptkey = false
 local KeyData = {}
 local KeyType = "string"
 KeyData["Trial"] = true
