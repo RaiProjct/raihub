@@ -15,7 +15,7 @@ KeyData["Trial"] = true
 -- [ Funções de Verificação ] --
 function CheckGame()
 local gameId = game.PlaceID
-if gameId == 6442957604 then
+if gameId == 71315343 then
 dragonballrage()
 else
   return
