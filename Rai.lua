@@ -95,9 +95,14 @@ dbrFarmTab:AddToggle({
   Name = "Auto Stats",
   Default = false,
   Callback = function(Value)
-  local Enabled = Value
+    _G.autostats = Value
+    autostats()
   end
 })
+function autostats()
+  while _G.autostats == true do
+  end
+end
 end
 
 RaiLib:Init()
