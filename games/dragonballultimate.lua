@@ -80,21 +80,21 @@ end
 end
 checkprotocol()
 
-local dbuWindow = RaiLib:MakeWindow{
+local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  | Dragon Blox Ultimate",
     HidePremium = false,
     IntroText = "Privileged | Carregando...",
     SaveConfig = true,
-    ConfigFolder = "dbu-pg"
+    ConfigFolder = "Main-pg"
 }
 
-local dbuFarmTab = dbuWindow:MakeTab{
+local MainFarmTab = MainWindow:MakeTab{
     Name = "Farm",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 }
 
-dbuFarmTab:AddToggle{
+MainFarmTab:AddToggle{
     Name = "Auto Train",
     Default = false,
     Callback = function(Value)
@@ -135,13 +135,13 @@ local function autotrain4()
     end
 end
 
-local dbuEspTab = dbuWindow:MakeTab{
+local MainEspTab = MainWindow:MakeTab{
     Name = "Esp",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 }
 
-dbuEspTab:AddToggle{
+MainEspTab:AddToggle{
     Name = "Esp Player",
     Default = false,
     Callback = function(Value)
