@@ -69,9 +69,4 @@ KeySystemTab:AddButton{
     end
 }
 
--- [ Função dos games ] --
-function dragonbloxultimate()
-
-end
-
 RaiLib:Init()
