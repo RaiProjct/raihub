@@ -1,5 +1,9 @@
 local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib'))()
 
+function checkprotocol()
+  
+end
+
 local dbuWindow = RaiLib:MakeWindow{
     Name = "Privileged  | Dragon Blox Ultimate",
     HidePremium = false,
