@@ -72,6 +72,12 @@ local MainWindow = RaiLib:MakeWindow{
     ConfigFolder = "sg-pg"
 }
 
+local KeySystemTab = MainWindow:MakeTab{
+    Name = "Games",
+    Icon = "rbxassetid://16845695850",
+    PremiumOnly = false
+}
+
 end
 
 RaiLib:Init()
