@@ -1,4 +1,10 @@
 local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib'))()
+local Sense = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Sirius/request/library/sense/source.lua'))()
+
+Sense.teamSettings.enemy.enabled = true
+Sense.teamSettings.enemy.box = true
+Sense.teamSettings.enemy.boxColor[1] = Color3.new(0, 0.25, 0.75)
+
 
 _G.autotrain = false
 
