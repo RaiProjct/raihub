@@ -63,7 +63,6 @@ KeySystemTab:AddButton{
     Callback = function()
         if KeyData[KeyType] then
             CheckKey()
-            _G.protocolprocesskeyrailibcheckscriptkey = true
         else
             DisplayInvalidKeyNotification()
             _G.protocolprocesskeyrailibcheckscriptkey = false
