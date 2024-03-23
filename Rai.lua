@@ -92,16 +92,16 @@ local dbrEspTab = dbrWindow:MakeTab({
 })
 
 dbrFarmTab:AddToggle({
-  Name = "Auto Stats",
+  Name = "Auto Train",
   Default = false,
   Callback = function(Value)
-    _G.autostats = Value
-    autostats()
+  _G.autotrain = Value
+  autotrain()
   end
 })
 function autostats()
-  while _G.autostats == true do
-  end
+while _G.autotrain == true do
+end
 end
 end
 
