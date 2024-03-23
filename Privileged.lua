@@ -8,8 +8,8 @@ local MainWindow = RaiLib:MakeWindow{
 }
 
 _G.protocolprocesskeyrailibcheckscriptkey = false
-local KeyData = Trial
-local KeyType = "string"
+_G.KeyData = Trial
+_G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
 local function CheckGame()
@@ -54,14 +54,14 @@ KeySystemTab:AddTextbox{
     Default = "",
     TextDisappear = true,
     Callback = function(Value)
-        KeyType = Value
+        _G.KeyType = Value
     end
 }
 
 KeySystemTab:AddButton{
     Name = "Login",
     Callback = function()
-        if KeyType == KeyData then
+        if _G.KeyType == _G.KeyData then
             CheckKey()
         else
             DisplayInvalidKeyNotification()
