@@ -99,6 +99,24 @@ local MainEspTab = MainWindow:MakeTab{
     PremiumOnly = false
 }
 
+MainEspTab:AddButton({
+	Name = "Esp Player",
+	Callback = function()
+	  if _G.autotrain == false then
+	    _G.autotrain = true
+	    wait(.1)
+	    autotrain1()
+      autotrain2()
+      autotrain3()
+      autotrain4()
+	  else
+	    _G.espcheck = false
+	    wait(.1)
+	    espcheck()
+  	end
+  	end
+})
+
 MainFarmTab:AddToggle{
     Name = "Auto Train",
     Default = false,
