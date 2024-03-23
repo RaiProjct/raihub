@@ -80,30 +80,24 @@ local dbrWindow = RaiLib:MakeWindow({
   ConfigFolder = "dbr-pg"
 })
 
-local dbrFarmTab = MainWindow:MakeTab({
+local dbrFarmTab = dbrWindow:MakeTab({
   Name = "Farm",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
-local dbrEspTab = MainWindow:MakeTab({
+local dbrEspTab = dbrWindow:MakeTab({
   Name = "Esp",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
 
-Tab:AddToggle({
-	Name = "Auto Stats",
-	Default = false,
-	Callback = function(Value)
-		local Enabled = Value
-	end    
+dbrFarmTab:AddToggle({
+  Name = "Auto Stats",
+  Default = false,
+  Callback = function(Value)
+  local Enabled = Value
+  end
 })
-
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
 end
 
 RaiLib:Init()
