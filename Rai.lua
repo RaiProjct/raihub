@@ -16,7 +16,7 @@ KeyData["Trial"] = true
 function CheckGame()
 local gameId = game.PlaceID
 if gameId == 6442957604 then
-pctycoon()
+dragonballrage()
 else
   return
 end
@@ -70,7 +70,7 @@ KeySystemTab:AddButton({
   end
 })
 
--- [ Função do pctycoon ] --
+-- [ Função dos games ] --
 function dragonballrage()
 local dbrWindow = RaiLib:MakeWindow({
   Name = "Privileged  | Dragon Ball Rage",
