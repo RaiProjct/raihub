@@ -1,7 +1,8 @@
 local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib'))()
 
 function checkprotocol()
-  
+  if _G.protocolprocesskeyrailibcheckscriptkey == false then
+    
 end
 
 local dbuWindow = RaiLib:MakeWindow{
