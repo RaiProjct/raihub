@@ -93,6 +93,11 @@ local MainFarmTab = MainWindow:MakeTab{
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 }
+local MainEspTab = MainWindow:MakeTab{
+    Name = "Esp",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+}
 
 MainFarmTab:AddToggle{
     Name = "Auto Train",
@@ -135,11 +140,7 @@ local function autotrain4()
     end
 end
 
-local MainEspTab = MainWindow:MakeTab{
-    Name = "Esp",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-}
+
 
 MainEspTab:AddToggle{
     Name = "Esp Player",
