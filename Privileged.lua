@@ -21,7 +21,7 @@ function process()
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
     RaiLib:Destroy()
-    
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/seletor.lua")))()
 end
 
 local function DisplayInvalidKeyNotification()
