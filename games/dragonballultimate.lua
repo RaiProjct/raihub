@@ -156,6 +156,4 @@ local function espcheck()
     espLib:Unload()
   end
 end
-
-checkprotocol()
 RaiLib:Init()
