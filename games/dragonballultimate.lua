@@ -2,6 +2,7 @@ local RaiLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/RaiPro
 
 function checkprotocol()
   if _G.protocolprocesskeyrailibcheckscriptkey == false then
+    RaiLib:Destroy()
     
 end
 
