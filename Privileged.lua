@@ -21,7 +21,7 @@ function process()
     }
     _G.protocolprocesskeyrailibcheckscriptkey = true
     RaiLib:Destroy()
-    nextpage()
+    
 end
 
 local function DisplayInvalidKeyNotification()
