@@ -100,7 +100,7 @@ local MainEspTab = MainWindow:MakeTab{
 }
 
 MainEspTab:AddButton({
-	Name = "Esp Player",
+	Name = "Auto Train",
 	Callback = function()
 	  if _G.autotrain == false then
 	    _G.autotrain = true
