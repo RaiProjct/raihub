@@ -22,8 +22,8 @@ function process()
     local gameId = game.PlaceID
     _G.protocolprocesskeyrailibcheckscriptkey = true
     if gameId == 3311165597 then
-      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
       RaiLib:Destroy()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
     else
         return
     end
