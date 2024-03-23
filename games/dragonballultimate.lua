@@ -3,6 +3,8 @@ local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlex
 
 _G.espcheck = false
 _G.autotrain = false
+espLib.options.boxFill = true
+espLib.options.boxesTransparency =
 
 function espcheck()
   if _G.espcheck == true then
