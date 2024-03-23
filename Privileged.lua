@@ -13,7 +13,7 @@ _G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
 function process()
-    _G.gameidprishsjsjsks = DataModel.PlaceID
+    _G.gameidprishsjsjsks = game.PlaceID
     print(gameidprishsjsjsks)
     RaiLib:MakeNotification{
         Name = "Sucesso!",
