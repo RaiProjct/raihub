@@ -62,4 +62,10 @@ KeySystemTab:AddButton{
     end
 }
 
+function nextpage()
+
+
+
+end
+
 RaiLib:Init()
