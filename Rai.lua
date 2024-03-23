@@ -79,6 +79,7 @@ local dbrWindow = RaiLib:MakeWindow({
   SaveConfig = true,
   ConfigFolder = "dbr-pg"
 })
+
 end
 
 RaiLib:Init()
