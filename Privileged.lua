@@ -14,7 +14,7 @@ _G.gameId = game.PlaceID
 
 -- [ Funções de Verificação ] --
 function process()
-    _G.gameId = game.PlaceID
+    _G.gameId = tonumber(game.PlaceID)
     print(gameId)
     RaiLib:MakeNotification{
         Name = "Sucesso!",
