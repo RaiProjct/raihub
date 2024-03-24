@@ -1,7 +1,7 @@
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib")))()
 
 local Main2Window = RaiLib:MakeWindow{
-    Name = "Privileged  |  Select Game",
+    Name = "Privileged  |  Seletor",
     HidePremium = false,
     IntroText = "Privileged | Carregando...",
     SaveConfig = true,
