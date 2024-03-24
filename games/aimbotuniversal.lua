@@ -1,6 +1,7 @@
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib")))()
 
 _G.systemEnabled = false
+_G.fov = 50
 
 local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  |  Aimbot Universal",
