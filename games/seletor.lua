@@ -35,6 +35,7 @@ FeaturesTab:AddButton{
       espLib.options.limitDistance = true
       espLib.options.teamCheck = true
       espLib.options.teamColor = true
+      espLib.options.chams = true
       espLib:Load()
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
     end
