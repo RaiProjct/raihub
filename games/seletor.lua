@@ -1,4 +1,5 @@
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib")))()
+local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
 
 local Main2Window = RaiLib:MakeWindow{
     Name = "Privileged  |  Seletor",
@@ -30,6 +31,8 @@ FeaturesTab:AddButton{
     Name = "Aimbot + Esp Chams",
     Callback = function()
       RaiLib:Destroy()
+      espLib.options.boxes = false
+      espLib.options.chams = true
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
     end
 }
