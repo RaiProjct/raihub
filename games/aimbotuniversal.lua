@@ -36,6 +36,6 @@ Tab:AddSlider({
 	Increment = 5,
 	ValueName = "Fov",
 	Callback = function(Value)
-		
+		_G.fov = Value
 	end    
 })
