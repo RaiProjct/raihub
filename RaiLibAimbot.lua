@@ -1,5 +1,7 @@
 -- Credit Dollynho --
 
+_G.SystemVar = false
+
 local fov = 60
 local maxDistance = 400
 local maxTransparency = 0.1
@@ -88,6 +90,8 @@ toggleTeamCheck()
 
 RunService.RenderStepped:Connect(function()
     updateDrawings()
+    
+    if _G.SystemVar == true then
     local closest = getClosestPlayerInFOV("Head")
     if closest and closest.Character:FindFirstChild("Head") then
         lookAt(closest.Character.Head.Position)
@@ -99,6 +103,7 @@ RunService.RenderStepped:Connect(function()
         FOVring.Transparency = calculateTransparency(distance)
     else
         FOVring.Transparency = maxTransparency
+    end
     end
     
     wait(0.03)
