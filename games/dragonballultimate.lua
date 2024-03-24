@@ -55,7 +55,7 @@ local MainFarmTab = MainWindow:MakeTab{
 }
 local MainEspTab = MainWindow:MakeTab{
     Name = "Esp",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://16848194152",
     PremiumOnly = false
 }
 
