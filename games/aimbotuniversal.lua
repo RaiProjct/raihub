@@ -8,3 +8,8 @@ local MainWindow = RaiLib:MakeWindow{
     ConfigFolder = "aimbot-pg"
 }
 
+local Config = MainWindow:MakeTab{
+    Name = "Config",
+    Icon = "rbxassetid://16845695850",
+    PremiumOnly = false
+}
