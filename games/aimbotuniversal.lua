@@ -18,8 +18,8 @@ getgenv().ExunysDeveloperAimbot = {
 		OffsetToMoveDirection = false,
 		OffsetIncrement = 15,
 
-		Sensitivity = 1.5,
-		Sensitivity2 = 3,
+		Sensitivity = 0,
+		Sensitivity2 = 2,
 
 		LockMode = 1,
 		LockPart = "Head",
@@ -29,7 +29,7 @@ getgenv().ExunysDeveloperAimbot = {
 	},
 
 	FOVSettings = {
-		Enabled = true,
+		Enabled = false,
 		Visible = true,
 
 		Radius = 160,
