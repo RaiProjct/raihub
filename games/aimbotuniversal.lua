@@ -30,11 +30,11 @@ Config:AddButton{
 
 Tab:AddSlider({
 	Name = "Fov",
-	Min = 5,
+	Min = 1,
 	Max = 200,
 	Default = 50,
 	Color = Color3.fromRGB(255,255,255),
-	Increment = 5,
+	Increment = 1,
 	ValueName = "Fov",
 	Callback = function(Value)
 		_G.fov = Value
