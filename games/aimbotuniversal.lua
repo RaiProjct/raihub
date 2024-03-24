@@ -11,9 +11,9 @@ getgenv().ExunysDeveloperAimbot = {
 	Settings = {
 		Enabled = true,
 
-		TeamCheck = false,
+		TeamCheck = true,
 		AliveCheck = true,
-		WallCheck = false,
+		WallCheck = true,
 
 		OffsetToMoveDirection = false,
 		OffsetIncrement = 15,
@@ -39,7 +39,7 @@ getgenv().ExunysDeveloperAimbot = {
 		Transparency = 1,
 		Filled = false,
 
-		RainbowColor = false,
+		RainbowColor = true,
 		RainbowOutlineColor = false,
 		Color = Color3.fromRGB(255, 255, 255),
 		OutlineColor = Color3.fromRGB(0, 0, 0),
