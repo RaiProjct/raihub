@@ -27,10 +27,10 @@ GameTab:AddButton{
     end
 }
 FeaturesTab:AddButton{
-    Name = "Aimbot + Esp Universal",
+    Name = "Aimbot Universal",
     Callback = function()
       RaiLib:Destroy()
-      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/aimbotuniversal.lua")))()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
     end
 }
 
