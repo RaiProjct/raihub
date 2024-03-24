@@ -3,7 +3,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/mai
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
 
 _G.espcheck = false
-_G.systemEnabled = false
+_G.enabled = false
 
 function espcheck()
   if _G.espcheck == true then
@@ -29,10 +29,10 @@ local Config = MainWindow:MakeTab{
 Config:AddButton{
     Name = "Aimbot",
     Callback = function()
-      if _G.systemEnabled == false then
-        _G.systemEnabled = true
+      if _G.enabled == false then
+        _G.enabled = true
       else
-        _G.systemEnabled = false
+        _G.enabled = false
     end
 }
 
