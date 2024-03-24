@@ -1,8 +1,5 @@
 -- Credit Dollynho --
 
-_G.enabled = false
-
-if _G.enabled == true then
 local fov = 60
 local maxDistance = 400
 local maxTransparency = 0.1
@@ -106,4 +103,3 @@ RunService.RenderStepped:Connect(function()
     
     wait(0.03)
 end)
-end
