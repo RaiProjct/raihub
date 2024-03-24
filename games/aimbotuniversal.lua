@@ -14,7 +14,7 @@ local MainWindow = RaiLib:MakeWindow{
 
 local Config = MainWindow:MakeTab{
     Name = "Config",
-    Icon = "rbxassetid://16845695850",
+    Icon = "rbxassetid://16848226251",
     PremiumOnly = false
 }
 
