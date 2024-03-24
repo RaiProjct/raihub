@@ -17,11 +17,6 @@ local Config = MainWindow:MakeTab{
 Config:AddButton{
     Name = "Aimbot",
     Callback = function()
-        if  then
-            process()
-        else
-            DisplayInvalidKeyNotification()
-            _G.protocolprocesskeyrailibcheckscriptkey = false
-        end
+      
     end
 }
