@@ -13,6 +13,11 @@ local GameTab = Main2Window:MakeTab{
     Icon = "rbxassetid://16845953528",
     PremiumOnly = false
 }
+local FeaturesTab = Main2Window:MakeTab{
+    Name = "Features",
+    Icon = "rbxassetid://16845953528",
+    PremiumOnly = false
+}
 
 GameTab:AddButton{
     Name = "Dragon Blox Ultimate",
