@@ -1,11 +1,12 @@
-_G.systemEnabled = false
+-- Credit Dollynho --
 
-local fov = 60
+local fov = 40
 local maxDistance = 400
 local maxTransparency = 0.1
-local teamCheck = true
+local teamCheck = false
 
 local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local Cam = game.Workspace.CurrentCamera
 
@@ -22,6 +23,15 @@ local function updateDrawings()
     FOVring.Position = camViewportSize / 2
 end
 
+local function onKeyDown(input)
+    if input.KeyCode == Enum.KeyCode.Delete then
+        RunService:UnbindFromRenderStep("FOVUpdate")
+        FOVring:Remove()
+    end
+end
+
+UserInputService.InputBegan:Connect(onKeyDown)
+
 local function lookAt(target)
     local lookVector = (target - Cam.CFrame.Position).unit
     local newCFrame = CFrame.new(Cam.CFrame.Position, Cam.CFrame.Position + lookVector)
@@ -29,7 +39,8 @@ local function lookAt(target)
 end
 
 local function calculateTransparency(distance)
-    local transparency = (1 - (distance / fov)) * maxTransparency
+    local maxDistance = fov
+    local transparency = (1 - (distance / maxDistance)) * maxTransparency
     return transparency
 end
 
@@ -68,21 +79,27 @@ local function getClosestPlayerInFOV(trg_part)
     return nearest
 end
 
+local function toggleTeamCheck()
+    teamCheck = not teamCheck
+end
+
+toggleTeamCheck()
+toggleTeamCheck()
+
 RunService.RenderStepped:Connect(function()
-    if _G.systemEnabled then
-        updateDrawings()
-        local closest = getClosestPlayerInFOV("Head")
-        if closest and closest.Character:FindFirstChild("Head") then
-            lookAt(closest.Character.Head.Position)
-        end
-        
-        if closest then
-            local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
-            local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
-            FOVring.Transparency = calculateTransparency(distance)
-        else
-            FOVring.Transparency = maxTransparency
-        end
+    updateDrawings()
+    local closest = getClosestPlayerInFOV("Head")
+    if closest and closest.Character:FindFirstChild("Head") then
+        lookAt(closest.Character.Head.Position)
     end
+    
+    if closest then
+        local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
+        local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
+        FOVring.Transparency = calculateTransparency(distance)
+    else
+        FOVring.Transparency = maxTransparency
+    end
+    
     wait(0.03)
 end)
