@@ -5,7 +5,7 @@ getgenv().ExunysDeveloperAimbot = {
 	DeveloperSettings = {
 		UpdateMode = "RenderStepped",
 		TeamCheckOption = "TeamColor",
-		RainbowSpeed = 1 -- Bigger = Slower
+		RainbowSpeed = 1
 	},
 
 	Settings = {
@@ -16,13 +16,13 @@ getgenv().ExunysDeveloperAimbot = {
 		WallCheck = false,
 
 		OffsetToMoveDirection = false,
-		OffsetIncrement = 15, -- Min: 1; Max: 30
+		OffsetIncrement = 15,
 
-		Sensitivity = 1.5, -- Animation length (in seconds) before fully locking onto target
-		Sensitivity2 = 3, -- mousemoverel Sensitivity
+		Sensitivity = 1.5,
+		Sensitivity2 = 3,
 
-		LockMode = 1, -- 1 = CFrame; 2 = mousemoverel
-		LockPart = "Head", -- Body part to lock on
+		LockMode = 1,
+		LockPart = "Head",
 
 		TriggerKey = Enum.UserInputType.MouseButton2,
 		Toggle = false
@@ -32,7 +32,7 @@ getgenv().ExunysDeveloperAimbot = {
 		Enabled = true,
 		Visible = true,
 
-		Radius = 160, -- Field Of View
+		Radius = 160,
 		NumSides = 60,
 
 		Thickness = 1,
