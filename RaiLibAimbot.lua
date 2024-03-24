@@ -90,20 +90,22 @@ toggleTeamCheck()
 
 RunService.RenderStepped:Connect(function()
     if _G.enabled == true then
+      updateDrawings()
+      local closest = getClosestPlayerInFOV("Head")
+      if closest and closest.Character:FindFirstChild("Head") then
+          lookAt(closest.Character.Head.Position)
+      end
       
-    updateDrawings()
-    local closest = getClosestPlayerInFOV("Head")
-    if closest and closest.Character:FindFirstChild("Head") then
-        lookAt(closest.Character.Head.Position)
-    end
-    
-    if closest then
-        local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
-        local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
-        FOVring.Transparency = calculateTransparency(distance)
+      if closest then
+          local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
+          local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
+          FOVring.Transparency = calculateTransparency(distance)
+      else
+          FOVring.Transparency = maxTransparency
+      end
+      
+      wait(0.03)
     else
-        FOVring.Transparency = maxTransparency
+      return
     end
-    
-    wait(0.03)
 end)
