@@ -1,6 +1,8 @@
 -- Credit Dollynho --
 
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
+espLib:Load()
+
 
 local fov = 60
 local maxDistance = 400
