@@ -2,7 +2,6 @@ local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiPr
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
 
 _G.systemEnabled = false
-_G.fov = 50
 
 local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  |  Aimbot Universal",
@@ -27,16 +26,3 @@ Config:AddButton{
         _G.systemEnabled = false
     end
 }
-
-Tab:AddSlider({
-	Name = "Fov",
-	Min = 1,
-	Max = 200,
-	Default = 50,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Fov",
-	Callback = function(Value)
-		_G.fov = Value
-	end    
-})
