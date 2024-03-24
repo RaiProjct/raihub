@@ -35,3 +35,18 @@ Config:AddButton{
         _G.systemEnabled = false
     end
 }
+
+Config:AddButton({
+	Name = "Esp Player",
+	Callback = function()
+	  if _G.espcheck == false then
+	    _G.espcheck = true
+	    wait(.1)
+	    espcheck()
+	  else
+	    _G.espcheck = false
+	    wait(.1)
+	    espcheck()
+  	end
+  	end
+})
