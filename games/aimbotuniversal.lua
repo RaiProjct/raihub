@@ -13,3 +13,15 @@ local Config = MainWindow:MakeTab{
     Icon = "rbxassetid://16845695850",
     PremiumOnly = false
 }
+
+Config:AddButton{
+    Name = "Aimbot",
+    Callback = function()
+        if  then
+            process()
+        else
+            DisplayInvalidKeyNotification()
+            _G.protocolprocesskeyrailibcheckscriptkey = false
+        end
+    end
+}
