@@ -10,7 +10,7 @@ local Main2Window = RaiLib:MakeWindow{
 
 local GameTab = Main2Window:MakeTab{
     Name = "Games",
-    Icon = "rbxassetid://16845953528",
+    Icon = "rbxassetid://16848188385",
     PremiumOnly = false
 }
 local FeaturesTab = Main2Window:MakeTab{
