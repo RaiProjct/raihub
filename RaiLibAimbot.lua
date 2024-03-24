@@ -88,7 +88,6 @@ toggleTeamCheck()
 
 RunService.RenderStepped:Connect(function()
     updateDrawings()
-    
     local closest = getClosestPlayerInFOV("Head")
     if closest and closest.Character:FindFirstChild("Head") then
         lookAt(closest.Character.Head.Position)
