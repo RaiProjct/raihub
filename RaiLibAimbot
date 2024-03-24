@@ -1,4 +1,4 @@
-_G.systemEnabled = true
+_G.systemEnabled = false
 
 local fov = 50
 local maxDistance = 400
