@@ -25,15 +25,15 @@ getgenv().ExunysDeveloperAimbot = {
 		LockPart = "Head",
 
 		TriggerKey = Enum.UserInputType.MouseButton2,
-		Toggle = false
+		Toggle = true
 	},
 
 	FOVSettings = {
 		Enabled = false,
-		Visible = true,
+		Visible = false,
 
-		Radius = 160,
-		NumSides = 60,
+		Radius = 360,
+		NumSides = 360,
 
 		Thickness = 1,
 		Transparency = 1,
