@@ -89,6 +89,8 @@ toggleTeamCheck()
 toggleTeamCheck()
 
 RunService.RenderStepped:Connect(function()
+    if _G.enabled == true then
+      
     updateDrawings()
     local closest = getClosestPlayerInFOV("Head")
     if closest and closest.Character:FindFirstChild("Head") then
