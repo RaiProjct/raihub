@@ -1,6 +1,6 @@
 _G.systemEnabled = false
+_G.fov = 50
 
-local fov = 50
 local maxDistance = 400
 local maxTransparency = 0.1
 local teamCheck = true
