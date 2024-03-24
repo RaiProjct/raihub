@@ -1,7 +1,16 @@
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib")))()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
+local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
 
+_G.espcheck = false
 _G.systemEnabled = false
+
+function espcheck()
+  if _G.espcheck == true then
+    espLib:Load()
+  else
+    espLib:Unload()
+  end
 
 local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  |  Aimbot Universal",
