@@ -7,3 +7,4 @@ local MainWindow = RaiLib:MakeWindow{
     SaveConfig = true,
     ConfigFolder = "aimbot-pg"
 }
+
