@@ -30,7 +30,7 @@ FeaturesTab:AddButton{
     Name = "Aimbot Universal",
     Callback = function()
       RaiLib:Destroy()
-      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/dragonballultimate.lua")))()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/games/aimbotuniversal.lua")))()
     end
 }
 
