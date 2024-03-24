@@ -27,7 +27,7 @@ GameTab:AddButton{
     end
 }
 FeaturesTab:AddButton{
-    Name = "Aimbot Universal",
+    Name = "Aimbot + Esp Chams",
     Callback = function()
       RaiLib:Destroy()
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
