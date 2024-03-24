@@ -50,7 +50,7 @@ local MainWindow = RaiLib:MakeWindow{
 
 local MainFarmTab = MainWindow:MakeTab{
     Name = "Farm",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://16848191701",
     PremiumOnly = false
 }
 local MainEspTab = MainWindow:MakeTab{
