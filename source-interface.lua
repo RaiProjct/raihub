@@ -247,7 +247,7 @@ local function LoadConfiguration(Configuration)
 				end    
 			end)
 		else
-			PrivilegedLibrary:Notify({Title = "Flag Error", Content = "Privileged was unable to find '"..FlagName.. "'' in the current script"})
+			PrivilegedLibrary:Notify({Title = "Flag Error", Content = "Privileged não encontrou'"..FlagName.. "'' no script atual."})
 		end
 	end
 end
