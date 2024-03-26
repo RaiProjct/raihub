@@ -34,6 +34,6 @@ local Toggle1 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-aimbot",
    Callback = function(Value)
-     
+     loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
    end,
 })
