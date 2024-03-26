@@ -4,6 +4,8 @@ by: swe7z
 originally: sirius
 ]]
 
+print("Interface Lib Loaded")
+
 local Release = "1.0"
 local NotificationDuration = 6.5
 local PrivilegedFolder = "Privileged"
