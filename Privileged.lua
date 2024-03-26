@@ -1,13 +1,7 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
-local function loadaimbot()
-  loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
-end
 
-loadaimbot()
-_G.fovaimb = 0
-_G.maxDistanceaimb = 0
 _G.aimtoggle = false
 _G.esptoggle = false
 _G.protocolkeysystempg = false
