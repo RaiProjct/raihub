@@ -72,7 +72,7 @@ local function getClosestPlayerInFOV(trg_part)
                       local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
   
                       if distance < last and isVisible and distance < fov and distance < maxDistance then
-                          last = distance
+                          local last = distance
                           local nearest = player
                       end
                   end
