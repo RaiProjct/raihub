@@ -40,8 +40,8 @@ local Tab2 = Window:CreateTab("Cheats", 16848226216)
 local function aimbot()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
     if _G.aimtoggle == true then
-      _G.fovaimb = 60
-      _G.maxDistanceaimb = 800
+      _G.fov = 60
+      _G.maxDistance = 800
     else
       _G.fov = 0
       _G.maxDistance = 0
