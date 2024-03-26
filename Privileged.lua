@@ -6,7 +6,7 @@ _G.protocolkeysystempg = false
 espLib.options.teamCheck = true
 espLib.options.teamColor = true
 espLib.options.boxes = false
-espLib.options.chams = false
+espLib.options.chams = true
 
 local Window = RaiLib:CreateWindow({
    Name = "Privileged",
