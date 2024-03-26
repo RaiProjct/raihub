@@ -66,6 +66,15 @@ local Toggle2 = Tab2:CreateToggle({
    end,
 })
 
+local Toggle2 = Tab2:CreateToggle({
+   Name = "Team Check",
+   CurrentValue = false,
+   Flag = "pg-teamcheck",
+   Callback = function(Value)
+      _G.teamCheck = Value
+   end,
+})
+
 local Toggle3 = Tab2:CreateToggle({
    Name = "Esp",
    CurrentValue = false,
