@@ -26,8 +26,6 @@ local Window = RaiLib:CreateWindow({
    }
 })
 
-_G.protocolprocesskeyrailibcheckscriptkey = false
-
 -- [ Funções de Verificação ] --
 function process()
     RaiLib:MakeNotification{
