@@ -2,7 +2,7 @@
 
 _G.aimtoggled = false
 
-local fov = 40
+_G.aimfov = 40
 local maxDistance = 400
 local maxTransparency = 0.1
 local teamCheck = false
@@ -17,7 +17,7 @@ FOVring.Visible = true
 FOVring.Thickness = 2
 FOVring.Color = Color3.fromRGB(128, 0, 128)
 FOVring.Filled = false
-FOVring.Radius = fov
+FOVring.Radius = _G.aimfov
 FOVring.Position = Cam.ViewportSize / 2
 
 local function updateDrawings()
@@ -41,7 +41,7 @@ local function lookAt(target)
 end
 
 local function calculateTransparency(distance)
-    local maxDistance = fov
+    local maxDistance = _G.aimfov
     local transparency = (1 - (distance / maxDistance)) * maxTransparency
     return transparency
 end
@@ -69,7 +69,7 @@ local function getClosestPlayerInFOV(trg_part)
                     local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
                     local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
 
-                    if distance < last and isVisible and distance < fov and distance < maxDistance then
+                    if distance < last and isVisible and distance < _G.aimfov and distance < maxDistance then
                         last = distance
                         nearest = player
                     end
