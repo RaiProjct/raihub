@@ -1,5 +1,5 @@
 getgenv().SecureMode = true
-local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
+local Privileged = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
 
@@ -9,7 +9,7 @@ espLib.options.teamColor = true
 espLib.options.boxes = false
 espLib.options.chams = true
 
-local Window = RaiLib:CreateWindow({
+local Window = Privileged:CreateWindow({
    Name = "Privileged",
    LoadingTitle = "Injetando...",
    LoadingSubtitle = "by Swe7z",
