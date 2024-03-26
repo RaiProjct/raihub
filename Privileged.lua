@@ -22,7 +22,7 @@ local Window = RaiLib:CreateWindow({
       FileName = "key-pg",
       SaveKey = true,
       GrabKeyFromSite = false,
-      Key = {"Hello"}
+      Key = {"trial"}
    }
 })
 
