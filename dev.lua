@@ -56,6 +56,7 @@ end
 
 local function getClosestPlayerInFOV(trg_part)
     if _G.aimbotenabled then
+      FOVring.Visible = true
       local nearest = nil
       local last = math.huge
       local playerMousePos = Cam.ViewportSize / 2
@@ -72,7 +73,7 @@ local function getClosestPlayerInFOV(trg_part)
   
                       if distance < last and isVisible and distance < fov and distance < maxDistance then
                           last = distance
-                          nearest = player
+                          local nearest = player
                       end
                   end
               end
