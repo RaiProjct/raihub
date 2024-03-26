@@ -1,6 +1,6 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
-local Window = Rayfield:CreateWindow({
+local Window = RaiLib:CreateWindow({
    Name = "Privileged",
    LoadingTitle = "Injetando...",
    LoadingSubtitle = "by Swe7z",
