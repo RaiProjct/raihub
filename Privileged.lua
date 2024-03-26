@@ -37,8 +37,8 @@ local Window = RaiLib:CreateWindow({
    }
 })
 
-local Tab1 = Window:CreateTab("Games", 4483362458)
-local Tab2 = Window:CreateTab("Cheats", 4483362458)
+local Tab1 = Window:CreateTab("Games", 16848188334)
+local Tab2 = Window:CreateTab("Cheats", 16848226216)
 
 local function aimbot()
     if _G.aimtoggle == false then
