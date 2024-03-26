@@ -11,8 +11,16 @@ function AimModule.updateCameraPosition(camera)
             if player.Character and player.Character:FindFirstChild("Humanoid") then
                 local distance = (player.Character.HumanoidRootPart.Position - camera.CFrame.Position).Magnitude
                 if distance < closestDistance then
-                    closestDistance = distance
-                    closestPlayer = player
+                    local ray = Ray.new(camera.CFrame.Position, (player.Character.Head.Position - camera.CFrame.Position).Unit)
+                    local hitPart, hitPosition = game.Workspace:FindPartOnRayWithIgnoreList(ray, {camera})
+                    if hitPart and hitPart:IsDescendantOf(player.Character) then
+                        -- Verifique se o jogador está na mesma equipe
+                        local localPlayer = game.Players.LocalPlayer
+                        if localPlayer.Team and player.Team and localPlayer.Team == player.Team then
+                            closestDistance = distance
+                            closestPlayer = player
+                        end
+                    end
                 end
             end
         end
@@ -25,9 +33,12 @@ end
 
 function AimModule.load()
     AimModule.AimVisible = true
+    print("Aim Visible ativado")
 end
+
 function AimModule.unload()
     AimModule.AimVisible = false
+    print("Aim Visible desativado")
 end
 
 return AimModule
