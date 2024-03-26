@@ -81,9 +81,11 @@ local function getClosestPlayerInFOV(trg_part)
     if _G.aimbotenabled == false then
       local nearest = nil
       FOVring.Visible = false
-    else
+    elseif _G.aimbotenabled == true then
       local nearest = player
       FOVring.Visible = true
+    else
+      print("error")
     end
 
     print(_G.aimbotenabled)
