@@ -46,5 +46,6 @@ local Toggle1 = Tab2:CreateToggle({
    Callback = function(Value)
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
       _G.aimbtoggle = Value
+      aimbot()
    end,
 })
