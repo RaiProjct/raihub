@@ -82,6 +82,7 @@ local function getClosestPlayerInFOV(trg_part)
       local nearest = nil
     end
 
+    print(nearest)
     return nearest
 end
 
