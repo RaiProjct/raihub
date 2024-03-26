@@ -76,14 +76,14 @@ local Toggle3 = Tab2:CreateToggle({
 })
 
 local Slider = Tab:CreateSlider({
-   Name = "Slider Example",
-   Range = {0, 100},
+   Name = "Change Fov",
+   Range = {10, 100},
    Increment = 10,
-   Suffix = "Bananas",
-   CurrentValue = 10,
+   Suffix = "Fov",
+   CurrentValue = 40,
    Flag = "pg-ab_fov",
    Callback = function(Value)
-      
+      _G.aimfov = Value
    end,
 })
 
