@@ -29,7 +29,7 @@ local Window = RaiLib:CreateWindow({
 local Tab1 = Window:CreateTab("Games", 4483362458)
 local Tab2 = Window:CreateTab("Cheats", 448336245)
 
-function aimbot()
+local function aimbot()
     if _G.aimbtoggle == false then
         _G.fovaimb = 0
         _G.maxDistanceaimb = 0
