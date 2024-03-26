@@ -55,40 +55,39 @@ local function isPlayerAlive(player)
 end
 
 local function getClosestPlayerInFOV(trg_part)
-    local nearest = nil
-    local last = math.huge
-    local playerMousePos = Cam.ViewportSize / 2
-    local localPlayer = Players.LocalPlayer
-
-    for i = 1, #Players:GetPlayers() do
-        local player = Players:GetPlayers()[i]
-        if player and player ~= localPlayer and (not teamCheck or player.Team ~= localPlayer.Team) then
-            if isPlayerAlive(player) then
-                local part = player.Character and player.Character:FindFirstChild(trg_part)
-                if part then
-                    local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
-                    local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
-
-                    if distance < last and isVisible and distance < fov and distance < maxDistance then
-                        last = distance
-                        nearest = player
-                    end
-                end
-            end
-        end
-    end
-
     if _G.aimbotenabled then
-      local nearest = player
-      FOVring.Visible = true
+      local nearest = nil
+      local last = math.huge
+      local playerMousePos = Cam.ViewportSize / 2
+      local localPlayer = Players.LocalPlayer
+  
+      for i = 1, #Players:GetPlayers() do
+          local player = Players:GetPlayers()[i]
+          if player and player ~= localPlayer and (not teamCheck or player.Team ~= localPlayer.Team) then
+              if isPlayerAlive(player) then
+                  local part = player.Character and player.Character:FindFirstChild(trg_part)
+                  if part then
+                      local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
+                      local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
+  
+                      if distance < last and isVisible and distance < fov and distance < maxDistance then
+                          last = distance
+                          nearest = player
+                      end
+                  end
+              end
+          end
+      end
+      print(_G.aimbotenabled)
+      print(nearest)
+      return nearest
     else
       local nearest = nil
       FOVring.Visible = false
+      print(_G.aimbotenabled)
+      print(nearest)
+      return nearest
     end
-
-    print(_G.aimbotenabled)
-    print(nearest)
-    return nearest
 end
 
 local function toggleTeamCheck()
