@@ -23,7 +23,7 @@ local function updateDrawings()
     local camViewportSize = Cam.ViewportSize
     FOVring.Position = camViewportSize / 2
     FOVring.Visible = _G.showFov
-    FOVring.Radius = _G.aimfov
+    FOVring.Radius = tonumber(_G.aimfov)
 end
 
 local function onKeyDown(input)
