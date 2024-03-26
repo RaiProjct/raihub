@@ -46,7 +46,9 @@ local function aimbot()
     end
 end
 local function esp()
-  
+    if _G.esptoggle == false then
+    else
+    end
 end
 
 local Toggle1 = Tab2:CreateToggle({
