@@ -36,7 +36,8 @@ local Toggle1 = Tab2:CreateToggle({
    Callback = function(Value)
      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
      if Value == false then
-       
+        _G.fovaimb = 0
+        _G.maxDistanceaimb = 0
      end
    end,
 })
