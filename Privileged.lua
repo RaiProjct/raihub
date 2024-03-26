@@ -38,16 +38,18 @@ local Tab2 = Window:CreateTab("Cheats", 448336245)
 
 local function aimbot()
     if _G.aimtoggle == false then
-        _G.fovaimb = 0
-        _G.maxDistanceaimb = 0
+      _G.fovaimb = 0
+      _G.maxDistanceaimb = 0
     else
-        _G.fovaimb = 60
-        _G.maxDistanceaimb = 400
+      _G.fovaimb = 60
+      _G.maxDistanceaimb = 400
     end
 end
 local function esp()
     if _G.esptoggle == false then
+      espLib:Unload()
     else
+      espLib:Load()
     end
 end
 
