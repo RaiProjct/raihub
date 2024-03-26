@@ -86,6 +86,7 @@ local function getClosestPlayerInFOV(trg_part)
       FOVring.Visible = true
     end
 
+    print(_G.aimbotenabled)
     print(nearest)
     return nearest
 end
