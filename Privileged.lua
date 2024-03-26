@@ -58,20 +58,20 @@ local Toggle1 = Tab2:CreateToggle({
 })
 
 local Toggle2 = Tab2:CreateToggle({
-   Name = "Show Fov",
-   CurrentValue = false,
-   Flag = "pg-ab_showfov",
-   Callback = function(Value)
-      _G.showFov = Value
-   end,
-})
-
-local Toggle3 = Tab2:CreateToggle({
    Name = "Team Check",
    CurrentValue = false,
    Flag = "pg-ab_teamcheck",
    Callback = function(Value)
       _G.teamCheck = Value
+   end,
+})
+
+local Toggle3 = Tab2:CreateToggle({
+   Name = "Show Fov",
+   CurrentValue = false,
+   Flag = "pg-ab_showfov",
+   Callback = function(Value)
+      _G.showFov = Value
    end,
 })
 
