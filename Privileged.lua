@@ -9,8 +9,8 @@ _G.aimtoggle = false
 _G.esptoggle = false
 espLib.options.teamCheck = true
 espLib.options.teamColor = true
-espLib.options.box = false
-espLib.options.healthText = false
+espLib.options.boxes = false
+espLib.options.chams = false
 
 local Window = RaiLib:CreateWindow({
    Name = "Privileged",
