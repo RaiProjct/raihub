@@ -38,6 +38,9 @@ local Toggle1 = Tab2:CreateToggle({
      if Value == false then
         _G.fovaimb = 0
         _G.maxDistanceaimb = 0
+      else
+        _G.fovaimb = 60
+        _G.maxDistanceaimb = 400
      end
    end,
 })
