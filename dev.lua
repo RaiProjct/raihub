@@ -55,7 +55,6 @@ local function isPlayerAlive(player)
 end
 
 local function getClosestPlayerInFOV(trg_part)
-  if enabled == true then
     local nearest = nil
     local last = math.huge
     local playerMousePos = Cam.ViewportSize / 2
@@ -80,9 +79,6 @@ local function getClosestPlayerInFOV(trg_part)
     end
 
     return nearest
-  else
-    return nil
-  end
 end
 
 local function toggleTeamCheck()
