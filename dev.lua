@@ -2,10 +2,10 @@
 
 _G.aimtoggled = false
 _G.aimfov = 40
+_G.teamCheck = false
 
 local maxDistance = 500
 local maxTransparency = 0.1
-local teamCheck = false
 
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -62,7 +62,7 @@ local function getClosestPlayerInFOV(trg_part)
 
     for i = 1, #Players:GetPlayers() do
         local player = Players:GetPlayers()[i]
-        if player and player ~= localPlayer and (not teamCheck or player.Team ~= localPlayer.Team) then
+        if player and player ~= localPlayer and (not _G.teamCheck or player.Team ~= localPlayer.Team) then
             if isPlayerAlive(player) then
                 local part = player.Character and player.Character:FindFirstChild(trg_part)
                 if part then
@@ -82,7 +82,7 @@ local function getClosestPlayerInFOV(trg_part)
 end
 
 local function toggleTeamCheck()
-    teamCheck = not teamCheck
+    _G.teamCheck = not _G.teamCheck
 end
 
 toggleTeamCheck()
