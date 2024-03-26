@@ -4,7 +4,7 @@ by: swe7z
 originally: sirius
 ]]
 
-print("Interface Lib Loaded")
+print("Interfacelib Loaded")
 
 local Release = "1.0"
 local NotificationDuration = 6.5
