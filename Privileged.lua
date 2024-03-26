@@ -26,5 +26,5 @@ local Window = RaiLib:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Games", 4483362458)
-local Tab = Window:CreateTab("Cheats", 4483362458)
+local Tab1 = Window:CreateTab("Games", 4483362458)
+local Tab2 = Window:CreateTab("Cheats", 4483362458)
