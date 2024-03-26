@@ -11,6 +11,6 @@ aimbot.AliveCheck = true
 aimbot.Players = true
 aimbot.PlayerPart = 'Head'
 
-aimbot.FOV = 200
+aimbot.FOV = 360
 aimbot.FOVCircleColor = Color3.fromRGB(255, 255, 255)
 aimbot.ShowFOV = true
