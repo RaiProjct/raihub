@@ -1,7 +1,7 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
-local UserInputService = game:GetService("UserInputService")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
 
 _G.protocolkeysystempg = false
 espLib.options.teamCheck = true
@@ -39,7 +39,6 @@ local Tab1 = Window:CreateTab("Games", 16848188334)
 local Tab2 = Window:CreateTab("Cheats", 16848226216)
 
 local function aimbot()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
     if _G.aimtoggle == true then
       _G.fov = 60
       _G.maxDistance = 800
