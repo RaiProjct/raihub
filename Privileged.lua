@@ -87,6 +87,8 @@ local Slider = Tab:CreateSlider({
    end,
 })
 
+local Label2 = Tab2:CreateLabel("Esp Config")
+
 local Toggle4 = Tab2:CreateToggle({
    Name = "Esp",
    CurrentValue = false,
