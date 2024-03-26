@@ -1,6 +1,8 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local espLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Sirius/request/library/esp/esp.lua'),true))()
+local UserInputService = game:GetService("UserInputService")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
 
 _G.protocolkeysystempg = false
 espLib.options.teamCheck = true
