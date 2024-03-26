@@ -11,7 +11,7 @@ local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local Cam = game.Workspace.CurrentCamera
 
-local FOVring = Drawing.new("Circle")
+_G.FOVring = Drawing.new("Circle")
 FOVring.Visible = _G.showFov
 FOVring.Thickness = 2
 FOVring.Color = Color3.fromRGB(128, 0, 128)
