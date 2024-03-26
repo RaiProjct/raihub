@@ -1,13 +1,9 @@
--- Crie um módulo chamado "AimModule"
 local AimModule = {}
 
--- Variável global para controlar o Aim Visible
 AimModule.AimVisible = true
 
--- Função para atualizar a posição da câmera
 function AimModule.updateCameraPosition(camera)
     if AimModule.AimVisible then
-        -- Encontre o jogador mais próximo
         local closestPlayer = nil
         local closestDistance = math.huge
 
@@ -22,22 +18,16 @@ function AimModule.updateCameraPosition(camera)
         end
 
         if closestPlayer then
-            -- Atualize a posição da câmera para a cabeça do jogador mais próximo
             camera.CFrame = CFrame.new(closestPlayer.Character.Head.Position)
         end
     end
 end
 
--- Função para ativar o Aim Visible
 function AimModule.load()
     AimModule.AimVisible = true
-    print("Aim Visible ativado")
 end
-
--- Função para desativar o Aim Visible
 function AimModule.unload()
     AimModule.AimVisible = false
-    print("Aim Visible desativado")
 end
 
 return AimModule
