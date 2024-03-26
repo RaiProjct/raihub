@@ -2,7 +2,7 @@
 Aimbot Edited
 by: swe7z
 originally: ???
-]]
+]]--
 
 print("Aimlib Loaded")
 
