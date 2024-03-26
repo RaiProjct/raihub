@@ -1,44 +1,16 @@
-local AimModule = {}
+local aimbot = loadstring(game:HttpGet'https://github.com/RunDTM/Zeerox-Aimbot/raw/main/library.lua')()
 
-AimModule.AimVisible = true
+aimbot.Enabled = false
+aimbot.Key = Enum.UserInputType.MouseButton2
+aimbot.Smoothing = 10
+aimbot.Offset = {0, 0}
 
-function AimModule.updateCameraPosition(camera)
-    if AimModule.AimVisible then
-        local closestPlayer = nil
-        local closestDistance = math.huge
+aimbot.TeamCheck = true
+aimbot.AliveCheck = true
 
-        for _, player in pairs(game.Players:GetPlayers()) do
-            if player.Character and player.Character:FindFirstChild("Humanoid") then
-                local distance = (player.Character.HumanoidRootPart.Position - camera.CFrame.Position).Magnitude
-                if distance < closestDistance then
-                    local ray = Ray.new(camera.CFrame.Position, (player.Character.Head.Position - camera.CFrame.Position).Unit)
-                    local hitPart, hitPosition = game.Workspace:FindPartOnRayWithIgnoreList(ray, {camera})
-                    if hitPart and hitPart:IsDescendantOf(player.Character) then
-                        -- Verifique se o jogador está na mesma equipe
-                        local localPlayer = game.Players.LocalPlayer
-                        if localPlayer.Team and player.Team and localPlayer.Team == player.Team then
-                            closestDistance = distance
-                            closestPlayer = player
-                        end
-                    end
-                end
-            end
-        end
+aimbot.Players = true
+aimbot.PlayerPart = 'Head'
 
-        if closestPlayer then
-            camera.CFrame = CFrame.new(closestPlayer.Character.Head.Position)
-        end
-    end
-end
-
-function AimModule.load()
-    AimModule.AimVisible = true
-    print("Aim Visible ativado")
-end
-
-function AimModule.unload()
-    AimModule.AimVisible = false
-    print("Aim Visible desativado")
-end
-
-return AimModule
+aimbot.FOV = 200
+aimbot.FOVCircleColor = Color3.fromRGB(255, 255, 255)
+aimbot.ShowFOV = true
