@@ -27,8 +27,6 @@ local Window = Rayfield:CreateWindow({
 })
 
 _G.protocolprocesskeyrailibcheckscriptkey = false
-_G.KeyData = "trial"
-_G.KeyType = "string"
 
 -- [ Funções de Verificação ] --
 function process()
