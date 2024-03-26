@@ -7,9 +7,9 @@ _G.fovaimb = 0
 _G.maxDistanceaimb = 0
 _G.aimtoggle = false
 _G.esptoggle = false
-espLib.options.healthText = false
-espLib.options.healthText = false
-espLib.options.healthText = false
+espLib.options.teamCheck = true
+espLib.options.teamColor = true
+espLib.options.box = false
 espLib.options.healthText = false
 
 local Window = RaiLib:CreateWindow({
