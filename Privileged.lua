@@ -4,7 +4,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/mai
 
 _G.fovaimb = 0
 _G.maxDistanceaimb = 0
-_G.aimbtoggle = false
+_G.aimtoggle = false
 _G.esptoggle = false
 
 local Window = RaiLib:CreateWindow({
@@ -37,7 +37,7 @@ local Tab1 = Window:CreateTab("Games", 4483362458)
 local Tab2 = Window:CreateTab("Cheats", 448336245)
 
 local function aimbot()
-    if _G.aimbtoggle == false then
+    if _G.aimtoggle == false then
         _G.fovaimb = 0
         _G.maxDistanceaimb = 0
     else
@@ -56,7 +56,7 @@ local Toggle1 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-aimbot",
    Callback = function(Value)
-      _G.aimbtoggle = Value
+      _G.aimtoggle = Value
       aimbot()
    end,
 })
