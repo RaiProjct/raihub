@@ -46,6 +46,8 @@ local function esp()
     end
 end
 
+local Label1 = Tab2:CreateLabel("Aimbot Config")
+
 local Toggle1 = Tab2:CreateToggle({
    Name = "Aimbot",
    CurrentValue = false,
