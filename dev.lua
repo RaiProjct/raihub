@@ -1,6 +1,6 @@
 -- Credit Dollynho --
 
-_G.enabled = false
+_G.aimbotenabled = false
 
 local fov = 60
 local maxDistance = 400
