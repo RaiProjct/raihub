@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Privileged",
       Subtitle = "Key System",
       Note = "No method of obtaining the key is provided",
       FileName = "key-pg",
