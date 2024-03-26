@@ -1,17 +1,17 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
+   Name = "Privileged",
+   LoadingTitle = "Injetando...",
+   LoadingSubtitle = "by Swe7z",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
+      FolderName = nil,
+      FileName = "Privileged-PG"
    },
    Discord = {
-      Enabled = false,
-      Invite = "noinvitelink",
+      Enabled = true,
+      Invite = "tn3x7hEvn3",
       RememberJoins = true
    },
    KeySystem = true,
