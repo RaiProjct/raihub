@@ -1,3 +1,5 @@
+print("Aim Loaded")
+
 _G.aimtoggled = false
 _G.aimfov = 40
 _G.teamCheck = false
