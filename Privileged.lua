@@ -75,7 +75,7 @@ local Toggle3 = Tab2:CreateToggle({
    end,
 })
 
-local Slider = Tab:CreateSlider({
+local Slider1 = Tab2:CreateSlider({
    Name = "Change Fov",
    Range = {10, 100},
    Increment = 10,
