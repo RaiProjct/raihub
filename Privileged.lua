@@ -4,6 +4,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/mai
 
 _G.fovaimb = 0
 _G.maxDistanceaimb = 0
+_G.aimbtoggle = false
+
 
 local Window = RaiLib:CreateWindow({
    Name = "Privileged",
