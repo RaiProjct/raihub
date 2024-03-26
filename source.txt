@@ -2,7 +2,7 @@ local Release = "Source Edited"
 local NotificationDuration = 6.5
 local RailibFolder = "Railib"
 local ConfigurationFolder = RailibFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
+local ConfigurationExtension = ".cfg"
 
 
 
