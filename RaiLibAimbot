@@ -1,7 +1,7 @@
 -- Credit Dollynho --
 
-local fov = 60
-local maxDistance = 400
+_G.fovaimb = 60
+_G.maxDistanceaimb = 400
 local maxTransparency = 0.1
 local teamCheck = true
 
