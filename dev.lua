@@ -80,6 +80,8 @@ local function getClosestPlayerInFOV(trg_part)
 
     if _G.aimbotenabled == false then
       local nearest = nil
+    else
+      local nearest = player
     end
 
     print(nearest)
