@@ -3,6 +3,7 @@
 _G.aimtoggled = false
 _G.aimfov = 40
 _G.teamCheck = false
+_G.showFov = false
 
 local maxDistance = 500
 local maxTransparency = 0.1
@@ -13,7 +14,7 @@ local Players = game:GetService("Players")
 local Cam = game.Workspace.CurrentCamera
 
 local FOVring = Drawing.new("Circle")
-FOVring.Visible = true
+FOVring.Visible = _G.showFov
 FOVring.Thickness = 2
 FOVring.Color = Color3.fromRGB(128, 0, 128)
 FOVring.Filled = false
