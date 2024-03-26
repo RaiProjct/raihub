@@ -75,6 +75,18 @@ local Toggle3 = Tab2:CreateToggle({
    end,
 })
 
+local Slider = Tab:CreateSlider({
+   Name = "Slider Example",
+   Range = {0, 100},
+   Increment = 10,
+   Suffix = "Bananas",
+   CurrentValue = 10,
+   Flag = "pg-ab_fov",
+   Callback = function(Value)
+      
+   end,
+})
+
 local Toggle4 = Tab2:CreateToggle({
    Name = "Esp",
    CurrentValue = false,
