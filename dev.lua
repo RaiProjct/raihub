@@ -73,7 +73,7 @@ local function getClosestPlayerInFOV(trg_part)
   
                       if distance < last and isVisible and distance < fov and distance < maxDistance then
                           last = distance
-                          local nearest = player
+                          nearest = player
                       end
                   end
               end
