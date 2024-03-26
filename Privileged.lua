@@ -41,19 +41,20 @@ local Tab1 = Window:CreateTab("Games", 16848188334)
 local Tab2 = Window:CreateTab("Cheats", 16848226216)
 
 local function aimbot()
-    if _G.aimtoggle == false then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
+    if _G.aimtoggle == true then
+      _G.fovaimb = 60
+      _G.maxDistanceaimb = 800
+    else
       _G.fovaimb = 0
       _G.maxDistanceaimb = 0
-    else
-      _G.fovaimb = 60
-      _G.maxDistanceaimb = 400
     end
 end
 local function esp()
-    if _G.esptoggle == false then
-      espLib:Unload()
-    else
+    if _G.esptoggle == true then
       espLib:Load()
+    else
+      espLib:Unload()
     end
 end
 
