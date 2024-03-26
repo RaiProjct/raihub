@@ -5,7 +5,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/mai
 _G.fovaimb = 0
 _G.maxDistanceaimb = 0
 _G.aimbtoggle = false
-
+_G.esptoggle = false
 
 local Window = RaiLib:CreateWindow({
    Name = "Privileged",
@@ -64,7 +64,7 @@ local Toggle2 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-esp",
    Callback = function(Value)
-      _G.aimbtoggle = Value
+      _G.esptoggle = Value
       aimbot()
    end,
 })
