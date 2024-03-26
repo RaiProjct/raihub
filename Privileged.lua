@@ -51,7 +51,7 @@ local Toggle1 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-aimbot",
    Callback = function(Value)
-      _G.aimtoggle = Value
+      _G.aimtoggled = Value
    end,
 })
 
