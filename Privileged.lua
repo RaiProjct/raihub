@@ -47,7 +47,16 @@ local Toggle1 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-aimbot",
    Callback = function(Value)
-      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
+      _G.aimbtoggle = Value
+      aimbot()
+   end,
+})
+
+local Toggle2 = Tab2:CreateToggle({
+   Name = "Esp",
+   CurrentValue = false,
+   Flag = "pg-esp",
+   Callback = function(Value)
       _G.aimbtoggle = Value
       aimbot()
    end,
