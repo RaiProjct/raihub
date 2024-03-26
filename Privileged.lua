@@ -1,3 +1,4 @@
+getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  |  Key System",
