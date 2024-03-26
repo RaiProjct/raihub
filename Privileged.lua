@@ -27,20 +27,24 @@ local Window = RaiLib:CreateWindow({
 })
 
 local Tab1 = Window:CreateTab("Games", 4483362458)
-local Tab2 = Window:CreateTab("Cheats", 4483362458)
+local Tab2 = Window:CreateTab("Cheats", 448336245)
+
+function aimbot()
+    if _G.aimbtoggle == false then
+        _G.fovaimb = 0
+        _G.maxDistanceaimb = 0
+    else
+        _G.fovaimb = 60
+        _G.maxDistanceaimb = 400
+    end
+end
 
 local Toggle1 = Tab2:CreateToggle({
    Name = "Aimbot",
    CurrentValue = false,
    Flag = "pg-aimbot",
    Callback = function(Value)
-     loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
-     if Value == false then
-        _G.fovaimb = 0
-        _G.maxDistanceaimb = 0
-      else
-        _G.fovaimb = 60
-        _G.maxDistanceaimb = 400
-     end
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
+      _G.aimbtoggle = Value
    end,
 })
