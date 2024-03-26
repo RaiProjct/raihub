@@ -1,4 +1,4 @@
-local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLib")))()
+local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
 local MainWindow = RaiLib:MakeWindow{
     Name = "Privileged  |  Key System",
     HidePremium = false,
