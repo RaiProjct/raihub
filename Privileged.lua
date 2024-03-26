@@ -58,6 +58,15 @@ local Toggle1 = Tab2:CreateToggle({
 })
 
 local Toggle2 = Tab2:CreateToggle({
+   Name = "Show Fov",
+   CurrentValue = false,
+   Flag = "pg-showfov",
+   Callback = function(Value)
+      _G.aimtoggled = Value
+   end,
+})
+
+local Toggle3 = Tab2:CreateToggle({
    Name = "Esp",
    CurrentValue = false,
    Flag = "pg-esp",
