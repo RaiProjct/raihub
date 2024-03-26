@@ -1,4 +1,10 @@
-print("Aim Loaded")
+--[[
+Aimbot Edited
+by: swe7z
+originally: ???
+]]
+
+print("Aimlib Loaded")
 
 _G.aimtoggled = false
 _G.aimfov = 40
