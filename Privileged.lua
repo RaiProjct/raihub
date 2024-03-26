@@ -1,5 +1,10 @@
 getgenv().SecureMode = true
 local RaiLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibrary")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/RaiProjct/raihub/main/RaiLibAimbot")))()
+
+_G.fovaimb = 0
+_G.maxDistanceaimb = 0
+
 local Window = RaiLib:CreateWindow({
    Name = "Privileged",
    LoadingTitle = "Injetando...",
