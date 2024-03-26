@@ -38,6 +38,9 @@ local function aimbot()
         _G.maxDistanceaimb = 400
     end
 end
+local function esp()
+  
+end
 
 local Toggle1 = Tab2:CreateToggle({
    Name = "Aimbot",
