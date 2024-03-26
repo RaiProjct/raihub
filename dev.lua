@@ -1,9 +1,9 @@
 -- Credit Dollynho --
 
-local fov = 40
+local fov = 60
 local maxDistance = 400
 local maxTransparency = 0.1
-local teamCheck = false
+local teamCheck = true
 
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
