@@ -62,7 +62,7 @@ local Toggle2 = Tab2:CreateToggle({
    CurrentValue = false,
    Flag = "pg-showfov",
    Callback = function(Value)
-      _G.aimtoggled = Value
+      _G.showFov = Value
    end,
 })
 
