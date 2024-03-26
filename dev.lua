@@ -1,8 +1,8 @@
 -- Credit Dollynho --
 
 _G.aimtoggled = false
-
 _G.aimfov = 40
+
 local maxDistance = 500
 local maxTransparency = 0.1
 local teamCheck = false
