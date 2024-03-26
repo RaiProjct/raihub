@@ -84,6 +84,7 @@ local Slider1 = Tab2:CreateSlider({
    Flag = "pg-ab_fov",
    Callback = function(Value)
       _G.aimfov = Value
+      Slider1:Set(_G.aimfov)
    end,
 })
 
