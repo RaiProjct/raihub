@@ -43,8 +43,8 @@ local function aimbot()
       _G.fovaimb = 60
       _G.maxDistanceaimb = 800
     else
-      _G.fovaimb = 0
-      _G.maxDistanceaimb = 0
+      _G.fov = 0
+      _G.maxDistance = 0
     end
 end
 local function esp()
