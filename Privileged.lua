@@ -7,6 +7,7 @@ _G.fovaimb = 0
 _G.maxDistanceaimb = 0
 _G.aimtoggle = false
 _G.esptoggle = false
+_G.protocolkeysystempg = false
 espLib.options.teamCheck = true
 espLib.options.teamColor = true
 espLib.options.boxes = false
