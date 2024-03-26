@@ -1080,7 +1080,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 						if writefile then
 							writefile(PrivilegedFolder.."/Key System".."/"..Settings.KeySettings.FileName..ConfigurationExtension, FoundKey)
 						end
-						PrivilegedLibrary:Notify({Title = "Key System", Content = "The key for this script has been saved successfully"})
+						PrivilegedLibrary:Notify({Title = "Key System", Content = "A chave foi usada com sucesso"})
 					end
 				else
 					if AttemptsRemaining == 0 then
@@ -2471,7 +2471,7 @@ function PrivilegedLibrary:LoadConfiguration()
 		pcall(function()
 			if isfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension) then
 				LoadConfiguration(readfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension))
-				PrivilegedLibrary:Notify({Title = "Configuration Loaded", Content = "The configuration file for this script has been loaded from a previous session"})
+				PrivilegedLibrary:Notify({Title = "Configuration Loaded", Content = "O arquivo de configuração deste script foi carregado de uma sessão anterior"})
 			end
 		end)
 	end
