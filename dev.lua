@@ -1,5 +1,7 @@
 -- Credit Dollynho --
 
+_G.enabled = false
+
 local fov = 60
 local maxDistance = 400
 local maxTransparency = 0.1
