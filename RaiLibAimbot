@@ -1,7 +1,7 @@
 -- Credit Dollynho --
 
-_G.fovaimb = 0
-_G.maxDistanceaimb = 0
+_G.fov = 0
+_G.maxDistance = 0
 local maxTransparency = 0.1
 local teamCheck = true
 
