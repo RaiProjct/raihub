@@ -65,6 +65,6 @@ local Toggle2 = Tab2:CreateToggle({
    Flag = "pg-esp",
    Callback = function(Value)
       _G.esptoggle = Value
-      aimbot()
+      esp()
    end,
 })
