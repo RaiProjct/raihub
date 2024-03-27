@@ -88,8 +88,6 @@ local PrivilegedLibrary = {
 	}
 }
 
-
-
 -- Services
 
 local UserInputService = game:GetService("UserInputService")
