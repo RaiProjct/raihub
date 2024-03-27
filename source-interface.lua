@@ -241,7 +241,7 @@ local function LoadConfiguration(Configuration)
 				end    
 			end)
 		else
-			PrivilegedLibrary:Notify({Title = "Flag Error", Content = "Privileged was unable to find '"..FlagName.. "'' in the current script"})
+			PrivilegedLibrary:Notify({Title = "Flag Error", Content = "Privileged erro ao achar '"..FlagName.. "'' no script atual"})
 		end
 	end
 end
@@ -626,7 +626,7 @@ end
 
 function Hide()
 	Debounce = true
-	PrivilegedLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping K", Duration = 7})
+	PrivilegedLibrary:Notify({Title = "Interface Hidden", Content = "Pressione K para reabrir o menu", Duration = 7})
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 470, 0, 400)}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 470, 0, 45)}):Play()
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
@@ -2465,7 +2465,7 @@ function PrivilegedLibrary:LoadConfiguration()
 		pcall(function()
 			if isfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension) then
 				LoadConfiguration(readfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension))
-				PrivilegedLibrary:Notify({Title = "Configuration Loaded", Content = "The configuration file for this script has been loaded from a previous session"})
+				PrivilegedLibrary:Notify({Title = "Configuration Loaded", Content = "Configuração foi re-colocada com sucesso"})
 			end
 		end)
 	end
