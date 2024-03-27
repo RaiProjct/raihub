@@ -2,7 +2,7 @@
 Rayfield Edited
 by: swe7z
 originally: sirius
-]]--
+]]
 
 print("Interfacelib Loaded")
 
