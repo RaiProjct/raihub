@@ -4,8 +4,6 @@ local PrivilegedFolder = "Privileged"
 local ConfigurationFolder = PrivilegedFolder.."/Configurations"
 local ConfigurationExtension = ".pvld"
 
-
-
 local PrivilegedLibrary = {
 	Flags = {},
 	Theme = {
