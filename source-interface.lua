@@ -10,7 +10,7 @@ local PrivilegedLibrary = {
 	Flags = {},
 	Theme = {
 		Default = {
-			TextFont = "Default", -- Default will use the various font faces used across Privileged
+			TextFont = "Default", 
 			TextColor = Color3.fromRGB(240, 240, 240),
 
 			Background = Color3.fromRGB(25, 25, 25),
@@ -28,9 +28,9 @@ local PrivilegedLibrary = {
 
 			ElementBackground = Color3.fromRGB(35, 35, 35),
 			ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
-			SecondaryElementBackground = Color3.fromRGB(25, 25, 25), -- For labels and paragraphs
+			SecondaryElementBackground = Color3.fromRGB(25, 25, 25), 
 			ElementStroke = Color3.fromRGB(50, 50, 50),
-			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
+			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), 
 
 			SliderBackground = Color3.fromRGB(43, 105, 159),
 			SliderProgress = Color3.fromRGB(43, 105, 159),
@@ -49,8 +49,8 @@ local PrivilegedLibrary = {
 			PlaceholderColor = Color3.fromRGB(178, 178, 178)
 		},
 		Light = {
-			TextFont = "Gotham", -- Default will use the various font faces used across Privileged
-			TextColor = Color3.fromRGB(50, 50, 50), -- i need to make all text 240, 240, 240 and base gray on transparency not color to do this
+			TextFont = "Gotham", 
+			TextColor = Color3.fromRGB(50, 50, 50), 
 
 			Background = Color3.fromRGB(255, 255, 255),
 			Topbar = Color3.fromRGB(217, 217, 217),
@@ -67,9 +67,9 @@ local PrivilegedLibrary = {
 
 			ElementBackground = Color3.fromRGB(198, 198, 198),
 			ElementBackgroundHover = Color3.fromRGB(230, 230, 230),
-			SecondaryElementBackground = Color3.fromRGB(136, 136, 136), -- For labels and paragraphs
+			SecondaryElementBackground = Color3.fromRGB(136, 136, 136), 
 			ElementStroke = Color3.fromRGB(180, 199, 97),
-			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
+			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), 
 
 			SliderBackground = Color3.fromRGB(31, 159, 71),
 			SliderProgress = Color3.fromRGB(31, 159, 71),
@@ -259,7 +259,7 @@ local function SaveConfiguration()
 	writefile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension, tostring(HttpService:JSONEncode(Data)))
 end
 
-local neon = (function() -- Open sourced neon module
+local neon = (function() 
 	local module = {}
 
 	do
@@ -935,7 +935,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 				})
 			end
 
-			if Settings.Discord.RememberJoins then -- We do logic this way so if the developer changes this setting, the user still won't be prompted, only new users
+			if Settings.Discord.RememberJoins then 
 				writefile(PrivilegedFolder.."/Discord Invites".."/"..Settings.Discord.Invite..ConfigurationExtension,"Privileged RememberJoins is true for this invite, this invite will not ask you to join again")
 			end
 		else
@@ -1324,7 +1324,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 		end
 
 		-- ColorPicker
-		function Tab:CreateColorPicker(ColorPickerSettings) -- by Throit
+		function Tab:CreateColorPicker(ColorPickerSettings) 
 			ColorPickerSettings.Type = "ColorPicker"
 			local ColorPicker = Elements.Template.ColorPicker:Clone()
 			local Background = ColorPicker.CPBackground
@@ -1678,7 +1678,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 			end)
 
 			local InputSettings = {}
-			function InputSettings:Set(text) --Doesnt fire the event
+			function InputSettings:Set(text) 
 				Input.InputFrame.InputBox.Text = text
 			end
 			return InputSettings
@@ -1798,18 +1798,6 @@ function PrivilegedLibrary:CreateWindow(Settings)
 				DropdownOption.BackgroundTransparency = 1
 				DropdownOption.UIStroke.Transparency = 1
 				DropdownOption.Title.TextTransparency = 1
-
-				--local Dropdown = Tab:CreateDropdown({
-				--	Name = "Dropdown Example",
-				--	Options = {"Option 1","Option 2"},
-				--	CurrentOption = {"Option 1"},
-				--  MultipleOptions = true,
-				--	Flag = "Dropdown1",
-				--	Callback = function(TableOfOptions)
-
-				--	end,
-				--})
-
 
 				DropdownOption.Interact.ZIndex = 50
 				DropdownOption.Interact.MouseButton1Click:Connect(function()
@@ -2017,7 +2005,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 						Keybind.KeybindFrame.KeybindBox:ReleaseFocus()
 						SaveConfiguration()
 					end
-				elseif KeybindSettings.CurrentKeybind ~= nil and (input.KeyCode == Enum.KeyCode[KeybindSettings.CurrentKeybind] and not processed) then -- Test
+				elseif KeybindSettings.CurrentKeybind ~= nil and (input.KeyCode == Enum.KeyCode[KeybindSettings.CurrentKeybind] and not processed) then 
 					local Held = true
 					local Connection
 					Connection = input.Changed:Connect(function(prop)
@@ -2044,10 +2032,10 @@ function PrivilegedLibrary:CreateWindow(Settings)
 						if Held then
 							local Loop; Loop = RunService.Stepped:Connect(function()
 								if not Held then
-									KeybindSettings.Callback(false) -- maybe pcall this
+									KeybindSettings.Callback(false) 
 									Loop:Disconnect()
 								else
-									KeybindSettings.Callback(true) -- maybe pcall this
+									KeybindSettings.Callback(true) 
 								end
 							end)	
 						end
