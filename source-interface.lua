@@ -4,8 +4,6 @@ by: swe7z
 originally: sirius
 ]]
 
-print("Interfacelib Loaded")
-
 local Release = "1.0"
 local NotificationDuration = 6.5
 local PrivilegedFolder = "Privileged"
@@ -2481,4 +2479,5 @@ end
 
 task.delay(3.5, PrivilegedLibrary.LoadConfiguration, PrivilegedLibrary)
 
+print("Interfacelib Loaded")
 return PrivilegedLibrary
