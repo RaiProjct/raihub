@@ -1074,7 +1074,7 @@ function PrivilegedLibrary:CreateWindow(Settings)
 						if writefile then
 							writefile(PrivilegedFolder.."/Key System".."/"..Settings.KeySettings.FileName..ConfigurationExtension, FoundKey)
 						end
-						PrivilegedLibrary:Notify({Title = "Key System", Content = "The key for this script has been saved successfully"})
+						PrivilegedLibrary:Notify({Title = "Key System", Content = "Key usada com sucesso"})
 					end
 				else
 					if AttemptsRemaining == 0 then
