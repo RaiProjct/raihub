@@ -1,10 +1,10 @@
+print("Interfacelib Loaded")
+
 local Release = "1.0.0 Beta"
 local NotificationDuration = 6.5
 local PrivilegedFolder = "Privileged"
 local ConfigurationFolder = PrivilegedFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
-
-
 
 local PrivilegedLibrary = {
 	Flags = {},
