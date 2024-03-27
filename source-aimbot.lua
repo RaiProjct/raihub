@@ -1,3 +1,5 @@
+print("Aimlib Loaded")
+
 _G.aimtoggled = false
 _G.aimfov = 40
 _G.teamCheck = false
@@ -110,4 +112,3 @@ RunService.RenderStepped:Connect(function()
     
     wait(0.03)
 end)
-print("Aimlib Loaded")
