@@ -1,9 +1,3 @@
---[[
-Rayfield Edited
-by: swe7z
-originally: sirius
-]]
-
 local Release = "1.0"
 local NotificationDuration = 6.5
 local PrivilegedFolder = "Privileged"
