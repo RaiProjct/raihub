@@ -2,7 +2,7 @@ local Release = "1.0"
 local NotificationDuration = 6.5
 local PrivilegedFolder = "Privileged"
 local ConfigurationFolder = PrivilegedFolder.."/Configurations"
-local ConfigurationExtension = ".pvld"
+local ConfigurationExtension = ".txt"
 
 local PrivilegedLibrary = {
 	Flags = {},
